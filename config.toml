@@ -1,0 +1,26 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Chattanooga Democratic Socialists of America"
+theme = "retrofulhugo"
+[[menu.main]]
+  name = "Home"
+  identifier = "home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Events"
+  identifier = "events"
+  url = "/events/"
+  weight = 3
+[[menu.main]]
+  name = "Donate"
+  identifier = "donate"
+  url = "/donate/"
+  weight = 4
+[[menu.main]]
+  name = "Join Us"
+  identifier = "join"
+  url = "/join/"
+  weight = 2
+[params]
+  logo = "img/dsa-logo.png"
