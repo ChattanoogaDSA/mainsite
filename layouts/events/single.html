@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	{{ partial "head.html" . }}
+	<body>
+
+		{{ partial "nav.html" . }}
+		<div role="main" class="container main-content">
+			{{ partial "header_wp.html" . }}
+			<div class="event-data row">
+				<div class="col">
+					<div class="row">
+						<div class="col">
+							When?
+						</div>
+						<div class="col">
+							{{ dateFormat "Mon Jan 2 2006 2:00 PM" (.Param "event_data.date") }}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content row">
+				{{.Content}}
+			</div>
+		</div>
+		{{ partial "footer.html" . }}
+	</body>
+</html>

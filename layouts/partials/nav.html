@@ -1,35 +1,22 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    </div>
+<div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
+	<button class="menu-icon" type="button" data-toggle="main-nav"></button>
+	<h1 class="title-bar-title">Menu</h1>
+</div>
 
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-      {{ range .Site.Menus.main.ByWeight }}
-        {{ if .HasChildren }}
-          <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">{{ .Name }}</a>
-            <div class="navlinks-children">
-            {{ range .Children }}
-              <a href="{{ .URL }}">{{ .Name }}</a>
-            {{ end }}
-            </div>
-          </li>
-        {{ else }}
-          <li>
-          <a title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
-  	      </li>
-  	    {{ end }}
-      {{ end }}
-      </ul>
-    </div>
+<div class="top-bar" id="main-nav">
+	<div class="top-bar-left">
+		<h1 class="h2">
+			<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+		</h1>
+	</div>
 
-  </div>
-</nav>
+	<div class="top-bar-right">
+		<ul class="menu">
+			{{ range .Site.Menus.main.ByWeight }}
+				<li>
+					<a title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
+				</li>
+			{{ end }}
+		</ul>
+	</div>
+</div>
