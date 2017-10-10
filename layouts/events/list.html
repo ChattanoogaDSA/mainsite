@@ -6,7 +6,6 @@
 		<div role="main" class="container main-content">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-					{{ partial "header_wp.html" . }}
 					<ul>
 						{{ range (.Data.Pages.ByParam "event_data.date").Reverse }}
 						<li>

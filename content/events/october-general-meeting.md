@@ -8,11 +8,9 @@ event_data:
     address: "1001 Broad St, Chattanooga, TN"
     name: "4th Floor of the Downtown Library"
   blurb: "Come and plan with the fastest growing socialist movement in the USA"
-  facebook_url: 
-  eventbrite_url:
+  facebook_url: https://www.facebook.com/events/147224019215696/
+  eventbrite_url: https://www.facebook.com/events/147224019215696/
 ---
-
-## Description
 
 This meeting we're going to be talking about
 

@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'Manifold';
+	src: url('/font/ManifoldDSA-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Manifold';
+	src: url('/font/ManifoldDSA-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Manifold';
+	src: url('/font/ManifoldDSA-RegularItalic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+html {
+	color: #231F20;
+	font-family: 'Manifold', Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.grid-container {
+	max-width: 40rem;
+}
+
+#main_heading {
+	padding-top:8em;
+	padding-bottom:4em;
+}
+
+#main_heading_container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#main_heading img {
+	height: 100%;
+}
+
+#main_heading h1 {
+	line-height: 1.1em;
+	font-family: 'Manifold', Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#main_nav {
+	border-bottom: 0.2rem solid #EC1F27;
+	margin-bottom: 1em;
+}
+
+#main_nav li {
+	margin: 0 1em 2em;
+}
+
+#main_nav a {
+	color: #231F20;
+	font-family: 'Manifold', Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#main_nav li.active {
+}
+
+.event_label {
+	font-weight: bold;
+}
+
+.map iframe {
+	width: 100%;
+	margin: 1em 0;
+}
+
+.rsvp-icons {
+	font-size: 2em;
+}
+
+.rsvp-icons a {
+	margin-right: 2rem;
+}
+
+footer {
+	border-top: 0.2rem solid #EC1F27;
+	margin-top: 1rem;
+}
