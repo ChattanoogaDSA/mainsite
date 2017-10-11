@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	{{ partial "head.html" . }}
+	<body>
+
+		{{ partial "nav.html" . }}
+		<div role="main" class="grid-container main-content">
+			<div>
+				{{ .Content }}
+			</div>
+			<div class="grid-margin-x grid-x">
+				<div class="cell medium-6">
+					<h2>Upcoming Events</h2>
+					<ul>
+						{{ range ((where .Site.Pages "Section" "events").ByParam "event_data.date").Reverse }}
+						<li>
+							{{.Param "event_data.date"}}
+						</li>
+						{{ end }}
+					</ul>
+				</div>
+				<div class="cell medium-6">
+					<h2>Latest News</h2>
+				</div>
+			</div>
+		</div>
+		{{ partial "footer.html" . }}
+	</body>
+</html>
