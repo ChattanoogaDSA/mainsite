@@ -20,10 +20,14 @@
 }
 
 
-html {
+html, body {
 	color: #231F20;
 	font-family: 'Manifold', Helvetica, sans-serif;
 	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Manifold', Helvetica, sans-serif;
 }
 
 .grid-container {
@@ -102,7 +106,22 @@ html {
 	text-decoration: underline;
 }
 
+/*********** FOOTer STYLES ************/
+
 footer {
 	border-top: 0.2rem solid #EC1F27;
 	margin-top: 1rem;
+}
+
+footer .social_links {
+	list-style: none;
+}
+
+footer .social_links a {
+	color: #231F20;
+}
+
+footer .mailing_list input[type="submit"] {
+	background-color: #EC1F27;
+	font-weight: bold;
 }

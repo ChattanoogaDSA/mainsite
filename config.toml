@@ -24,3 +24,6 @@ theme = "retrofulhugo"
   weight = 2
 [params]
   logo = "img/dsa-logo.png"
+	facebook = "ChattanoogaDemocraticSocialistsofAmerica"
+	twitter = "dsa_chatt"
+	email = "chattanoogadsa@gmail.com"
