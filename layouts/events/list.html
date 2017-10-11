@@ -3,19 +3,21 @@
 	{{ partial "head.html" . }}
 	<body>
 		{{ partial "nav.html" . }}
-		<div role="main" class="container main-content">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-					<ul>
-						{{ range (.Data.Pages.ByParam "event_data.date").Reverse }}
-						<li>
-							<a href="{{.Permalink}}">{{ dateFormat "Mon Jan 2 2006" (.Param "event_data.date") }} | {{.Title}}</a>
-							<p>{{ .Param "event_data.blurb" }}</p>
-						</li>
-						{{ end }}
-					</ul>
-				</div>
-			</div>
+		<div role="main" class="grid-container main-content">
+			<ul class="event_list">
+				{{ range (.Data.Pages.ByParam "event_data.date").Reverse }}
+				<li class="grid-margin-x grid-x">
+					<div class="cell medium-3 date">
+						<div class="inner_date">{{ dateFormat "Jan 2" (.Param "event_data.date") }}</div>
+					</div>
+					<div class="cell auto">
+						<a href="{{.Permalink}}" class="title h4">{{.Title}}</a>
+						<p>{{ .Param "event_data.blurb" }}</p>
+						<p><a href="{{.Permalink}}">[learn more]</a></p>
+					</div>
+				</li>
+				{{ end }}
+			</ul>
 		</div>
 		{{ partial "footer.html" . }}
 	</body>

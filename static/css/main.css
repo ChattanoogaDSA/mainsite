@@ -30,6 +30,7 @@ html {
 	max-width: 40rem;
 }
 
+/*********** HEADER ************/
 #main_heading {
 	padding-top:8em;
 	padding-bottom:4em;
@@ -50,6 +51,7 @@ html {
 	font-weight: bold;
 }
 
+/*********** NAVIGATION ************/
 #main_nav {
 	border-bottom: 0.2rem solid #EC1F27;
 	margin-bottom: 1em;
@@ -68,6 +70,7 @@ html {
 #main_nav li.active {
 }
 
+/*********** EVENT STYLES ************/
 .event_label {
 	font-weight: bold;
 }
@@ -83,6 +86,20 @@ html {
 
 .rsvp-icons a {
 	margin-right: 2rem;
+}
+
+.event_list .inner_date {
+	background-color: #EC1F27;
+	color: white;
+	font-weight: bolder;
+	padding: 0.5em;
+	font-size: 1.2em;
+	text-align: center;
+}
+.event_list a.title {
+	font-weight: bolder;
+	color: #231F20;
+	text-decoration: underline;
 }
 
 footer {
