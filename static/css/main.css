@@ -74,6 +74,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #main_nav li.active {
 }
 
+/*********** HOMEPAGE ************/
+.homepage-content .mailing_list input[type="submit"] {
+	background-color: #EC1F27;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 40rem) {
+	.homepage-content .mc-field-group {
+		width: 49%;
+		float: left;
+	}
+
+	.homepage-content .mc-field-group:first-child {
+		margin-right: 1%;
+	}
+}
 /*********** EVENT STYLES ************/
 .event_label {
 	font-weight: bold;

@@ -4,11 +4,15 @@
 	<body>
 
 		{{ partial "nav.html" . }}
-		<div role="main" class="grid-container main-content">
+		<div role="main" class="grid-container main-content homepage-content">
+			<div class="mailing_list">
+				<h3>Keep in touch by subscribing</h3>
+				{{ partial "mailchimp_form.html" . }}
+			</div>
 			<div>
 				{{ .Content }}
 			</div>
-			<div class="grid-margin-x grid-x">
+			<div class="grid-x">
 				<div class="cell medium-6">
 					<h2>Upcoming Events</h2>
 					<ul>
