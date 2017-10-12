@@ -1,7 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Chattanooga Democratic Socialists of America"
-theme = "retrofulhugo"
 [[menu.main]]
   name = "Home"
   identifier = "home"

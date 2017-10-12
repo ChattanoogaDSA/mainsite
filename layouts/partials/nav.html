@@ -1,27 +1,45 @@
-<div class="title-bar" data-responsive-toggle="main-mobile-nav" data-hide-for="medium">
-	<button class="menu-icon" type="button" data-toggle="main-mobile-nav"></button>
-	<h1 class="title-bar-title">Menu</h1>
+<div class="mobile_nav">
+<div class="title-bar" data-responsive-toggle="main_mobile_nav" data-hide-for="medium">
+	<button class="menu-icon" type="button" data-toggle="main_mobile_nav"></button>
+	<h1 class="title-bar-title">Chattanooga DSA</h1>
 </div>
 
-<div class="hide-for-medium top-bar" id="main-mobile-nav">
-	<div class="top-bar-right">
-		<ul class="menu">
-			{{ range .Site.Menus.main.ByWeight }}
-				<li>
-					<a title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
-				</li>
-			{{ end }}
-		</ul>
-	</div>
+<div class="hide-for-medium " id="main_mobile_nav">
+	<ul>
+		{{ range .Site.Menus.main.ByWeight }}
+		<li>
+			<a title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
+		</li>
+		{{ end }}
+		<li>
+			<a href="https://www.facebook.com/{{ .Site.Params.facebook }}" title="Facebook">
+				<span class="fa-stack fa-sm">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+			<a href="https://www.twitter.com/{{ .Site.Params.twitter }}" title="Twitter">
+				<span class="fa-stack fa-sm">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+		</li>
+	</ul>
+</div>
 </div>
 
-<div class="show-for-medium" id="main_heading">
-	<div class="grid-x grid-margin-x align-center" id="main_heading_container">
-		<div class="cell medium-2 medium-offset-1">
+<div class="show-for-medium grid-container" id="main_heading">
+
+	<div id="main_heading_container" class="grid-x">
+		<div class="cell medium-3">
 			<img src="{{ .Site.BaseURL }}/img/dsa-logo.png"
-		       alt="The DSA logo colorized: A red rose, and underneath it two hands clasped in a handshake, one brown hand and one white hand."/>
-		</div>	
-		<h1 class="medium-auto">Chattanooga<br />Democratic Socialists</h1>
+				alt="The DSA logo colorized: A red rose, and underneath it two hands clasped in a handshake, one brown hand and one white hand."/>
+		</div>
+			
+		<div class="cell auto">
+			<h1 class="medium-auto">Chattanooga<br />Democratic Socialists</h1>
+		</div>
 	</div>
 </div>
 <div id="main_nav" class="show-for-medium">
@@ -32,6 +50,20 @@
 				<a title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
 			</li>
 			{{ end }}
+			<li>
+				<a href="https://www.facebook.com/{{ .Site.Params.facebook }}" title="Facebook">
+					<span class="fa-stack fa-md">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+					</span>
+				</a>
+				<a href="https://www.twitter.com/{{ .Site.Params.twitter }}" title="Twitter">
+					<span class="fa-stack fa-md">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+					</span>
+				</a>
+			</li>
 		</ul>
 	</div>
 </div>

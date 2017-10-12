@@ -12,20 +12,25 @@
 			<div>
 				{{ .Content }}
 			</div>
-			<div class="grid-x">
-				<div class="cell medium-6">
-					<h2>Upcoming Events</h2>
-					<ul>
-						{{ range ((where .Site.Pages "Section" "events").ByParam "event_data.date").Reverse }}
-						<li>
-							{{.Param "event_data.date"}}
-						</li>
-						{{ end }}
-					</ul>
-				</div>
-				<div class="cell medium-6">
-					<h2>Latest News</h2>
-				</div>
+			<div>
+				<h4>Upcoming Events</h4>
+				<ul class="event_list">
+					{{ range ((where .Site.Pages "Section" "events").ByParam "event_data.date") }}
+					{{ if isset .Params "event_data" }}
+					{{ if ge (time (.Param "event_data.date")).Unix now.Unix }}
+					<li class="grid-margin-x grid-x">
+						<div class="cell small-3 date">
+							<div class="inner_date">{{ dateFormat "Jan 2" (.Param "event_data.date") }}</div>
+						</div>
+
+						<div class="cell auto">
+							<a href="{{.Permalink}}" class="title">{{ .Title }}</a>
+						</div>
+					</li>
+					{{ end }}
+					{{ end }}
+					{{ end }}
+				</ul>
 			</div>
 		</div>
 		{{ partial "footer.html" . }}
