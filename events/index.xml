@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chattanooga Democratic Socialists of America</title>
-    <link>https://chattanoogadsa.github.io/mainsite/</link>
-    <description>Recent content on Chattanooga Democratic Socialists of America</description>
+    <title>Events on Chattanooga Democratic Socialists of America</title>
+    <link>https://chattanoogadsa.github.io/mainsite/events/</link>
+    <description>Recent content in Events on Chattanooga Democratic Socialists of America</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Oct 2017 16:29:48 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 05 Oct 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://chattanoogadsa.github.io/mainsite/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chattanoogadsa.github.io/mainsite/events/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -56,26 +56,6 @@
       <guid>https://chattanoogadsa.github.io/mainsite/events/september-socialist-sunday-taillight-clinic/</guid>
       <description>Description Following the example set by New Orleans DSA, we decided to put on a taillight clinic and serve the people of Chattanooga by replacing taillights for free. We&amp;rsquo;ll be out there for a few hours starting at 2pm.
 Tell everyone you know!</description>
-    </item>
-    
-    <item>
-      <title>Join DSA</title>
-      <link>https://chattanoogadsa.github.io/mainsite/join/</link>
-      <pubDate>Thu, 05 Oct 2017 18:54:19 -0400</pubDate>
-      
-      <guid>https://chattanoogadsa.github.io/mainsite/join/</guid>
-      <description>National DSA DSA is a member-funded organization with national dues. Dues ensure that DSA remains independent.
-Chattanooga DSA Chattanooga DSA does not require dues, but we do ask that you sign up for our mailing list</description>
-    </item>
-    
-    <item>
-      <title>Donate</title>
-      <link>https://chattanoogadsa.github.io/mainsite/donate/</link>
-      <pubDate>Thu, 05 Oct 2017 18:54:05 -0400</pubDate>
-      
-      <guid>https://chattanoogadsa.github.io/mainsite/donate/</guid>
-      <description>Donate to Chattanooga DSA  In analyzing the situation here in Chattanooga, TN, we have found that there is a lack of institutional power that is answerable to the broader population, and most power is wrapped up in and around a few groups of wealthy people.
-To build up people power, Chattanooga DSA has decided to focus on mutual aid actions aiming to find a place where we can build community power parallel to the current power structure.</description>
     </item>
     
   </channel>
