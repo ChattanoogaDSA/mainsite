@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://chattanoogadsa.github.io/mainsite/</loc>
+    <loc>https://chattanoogadsa.github.io/mainsite/</loc>
   </url>
   
   <url>
-    <loc>http://chattanoogadsa.github.io/mainsite/categories/</loc>
+    <loc>https://chattanoogadsa.github.io/mainsite/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://chattanoogadsa.github.io/mainsite/tags/</loc>
+    <loc>https://chattanoogadsa.github.io/mainsite/tags/</loc>
     <priority>0</priority>
   </url>
   
