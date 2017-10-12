@@ -1,0 +1,206 @@
+@font-face {
+	font-family: 'Manifold';
+	src: url('/font/ManifoldDSA-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Manifold';
+	src: url('/font/ManifoldDSA-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Manifold';
+	src: url('/font/ManifoldDSA-RegularItalic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+html, body {
+	color: #231F20;
+	font-family: 'Manifold', Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Manifold', Helvetica, sans-serif;
+}
+
+.grid-container {
+	max-width: 40rem;
+}
+
+/*********** HEADER ************/
+@media screen and (min-width: 40rem) { 
+	.title-bar {
+		display: none;
+	}
+}
+
+#main_heading {
+	padding-top:8em;
+	padding-bottom:4em;
+}
+
+#main_heading_container {
+	margin: 0 auto;
+}
+
+#main_heading img {
+	height: 100%;
+}
+
+#main_heading h1 {
+	line-height: 1.1em;
+	font-family: 'Manifold', Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+/*********** NAVIGATION ************/
+#main_nav {
+	border-bottom: 0.2rem solid #EC1F27;
+	margin-bottom: 1em;
+}
+
+#main_nav li {
+	width: 20%;
+	font-size: 1.2em;
+}
+
+#main_nav a {
+	color: #231F20;
+	font-family: 'Manifold', Helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+#main_mobile_nav ul {
+  list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#main_mobile_nav a {
+	font-weight: bold;
+	color: #231F20;
+}
+
+#main_mobile_nav li {
+	border-bottom: 2px solid #EC1F27;
+	padding: 0.5em 1em;
+}
+
+.title-bar {
+	background-color: #EC1F27;
+	font-weight: bold;
+}
+
+.mobile_nav {
+	margin-bottom: 1em;
+}
+
+/*********** HOMEPAGE ************/
+.homepage-content .mailing_list input[type="submit"] {
+	background-color: #EC1F27;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 40rem) {
+	.homepage-content .mc-field-group {
+		width: 49%;
+		float: left;
+	}
+
+	.homepage-content .mc-field-group:first-child {
+		margin-right: 1%;
+	}
+}
+
+.homepage-content .event_list li {
+	margin-bottom: 1em;
+}
+.homepage-content .event_list .inner_date {
+	padding: 0.1em;
+}
+/*********** EVENT STYLES ************/
+.event_label {
+	font-weight: bold;
+}
+
+.map iframe {
+	width: 100%;
+	margin: 1em 0;
+}
+
+.rsvp-icons {
+	font-size: 2em;
+}
+
+.rsvp-icons a {
+	margin-right: 2rem;
+}
+
+ul.event_list {
+	margin-left: 0;
+	list-style: none;
+}
+
+.event_list .inner_date {
+	background-color: #EC1F27;
+	color: white;
+	font-weight: bolder;
+	padding: 0.5em;
+	font-size: 1.2em;
+	text-align: center;
+}
+.event_list a.title {
+	font-weight: bolder;
+	color: #231F20;
+	text-decoration: underline;
+	padding-top: 0;
+}
+
+/*********** FOOTER STYLES ************/
+
+footer {
+	border-top: 0.2rem solid #EC1F27;
+	margin-top: 1rem;
+}
+
+footer .social_links {
+	list-style: none;
+}
+
+footer .social_links a {
+	color: #231F20;
+}
+
+@media screen and (max-width: 40rem) {
+	footer .social_links {
+		margin-top: 0.5em;
+	}
+	footer .social_links li {
+		display: inline-block;
+	}
+}
+
+footer .mailing_list input[type="submit"] {
+	background-color: #EC1F27;
+	font-weight: bold;
+}
+
+/*********** DONATE ************/
+.donate_block {
+	text-align: center;
+	margin: 2em auto;
+}
+a.paypal_donate {
+	color: white;
+	background: #EC1F27;
+	font-weight: bold;
+	padding: 1em;
+}
