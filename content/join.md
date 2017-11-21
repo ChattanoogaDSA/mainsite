@@ -9,7 +9,15 @@ draft: true
 DSA is a member-funded organization with national dues. Dues ensure that DSA
 remains independent. 
 
+<div class="join_block"><a href="http://dsausa.org/monthly">
+<span class="fa fa-plus-circle fa-lg"></span> Join DSA
+</a> </div>
+
 ### Chattanooga DSA
 
-Chattanooga DSA does not require dues, but we do ask that you sign up for our
-mailing list
+Get involved with Chattanooga DSA by [coming to one of our events](/events), joining our mailing list, or getting in touch!
+
+You can also [donate directly to Chattanooga DSA and support our efforts](/donate).
+
+To be a voting member of Chattanooga DSA, **we ask that you join national DSA** with link above.
+

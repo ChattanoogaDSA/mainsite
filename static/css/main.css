@@ -194,11 +194,11 @@ footer .mailing_list input[type="submit"] {
 }
 
 /*********** DONATE ************/
-.donate_block {
+.donate_block, .join_block {
 	text-align: center;
 	margin: 2em auto;
 }
-a.paypal_donate {
+a.paypal_donate, .join_block>a {
 	color: white;
 	background: #EC1F27;
 	font-weight: bold;

@@ -25,7 +25,7 @@
 			</ul>
 			<p class="h1">Past Events</p>
 			<ul class="event_list">
-				{{ range (.Data.Pages.ByParam "event_data.date") }}
+				{{ range (.Data.Pages.ByParam "event_data.date").Reverse }}
 					{{ if isset .Params "event_data" }}
 						{{ if lt (time (.Param "event_data.date")).Unix now.Unix }}
 							<li class="grid-margin-x grid-x">

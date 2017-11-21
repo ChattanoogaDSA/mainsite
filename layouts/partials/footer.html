@@ -44,8 +44,16 @@
 
 			</ul>
 			<div class="cell medium-5">
-				<blockquote>DSA is the major organization on the American left with an all-embracing moral vision, systematic social analysis, and political praxis rooted in the quest for radical democracy, social freedom, and individual liberties.
-					—Cornel West</blockquote>
+				<ul>
+					{{ range .Site.Menus.main.ByWeight }}
+					<li>
+						<a title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
+					</li>
+					{{ end }}
+					<li>
+						<a title="Archive" href="/archive">Archive</a>
+					</li>
+				</ul>
 			</div>
 			<div class="cell auto mailing_list">
 				<h4>Keep In Touch</h4>
