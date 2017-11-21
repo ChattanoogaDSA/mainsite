@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{ partial "head.html" . }}
+	<body>
+		{{ partial "nav.html" . }}
+		<div role="main" class="grid-container main-content">
+			<h2>Archive</h2>
+			<ul class="event_list">
+				{{ range .Data.Pages.ByPublishDate.Reverse }}
+							<li class="grid-margin-x grid-x">
+								<div class="cell medium-3 date">
+									<div class="inner_date">{{ dateFormat "Jan 2 2006" .PublishDate }}</div>
+								</div>
+								<div class="cell auto">
+									<a href="{{.Permalink}}" class="title h4">{{.Title}}</a>
+									<p>{{ .Param "summary" }}</p>
+									<p><a href="{{.Permalink}}">[Read more]</a></p>
+								</div>
+							</li>
+				{{ end }}
+			</ul>
+		</div>
+		{{ partial "footer.html" . }}
+	</body>
+</html>
+
