@@ -42,8 +42,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 #main_heading {
-	padding-top:8em;
-	padding-bottom:4em;
+	padding-top:4em;
+	padding-bottom:2em;
 }
 
 #main_heading_container {
