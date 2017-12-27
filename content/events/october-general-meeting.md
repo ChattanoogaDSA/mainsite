@@ -1,7 +1,7 @@
 ---
 title: "October 2017 General Meeting"
 date: 2017-10-05T21:12:44-04:00
-draft: true
+draft: false
 event_data:
   date: 2017-10-07T14:00:00-04:00
   location:
