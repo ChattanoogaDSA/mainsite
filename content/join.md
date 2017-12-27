@@ -1,7 +1,7 @@
 ---
 title: "Join DSA"
 date: 2017-10-05T18:54:19-04:00
-draft: true
+draft: false
 ---
 
 ### National DSA

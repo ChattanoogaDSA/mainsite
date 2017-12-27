@@ -1,7 +1,7 @@
 ---
 title: "September Socialist Sunday Taillight Clinic"
 date: 2017-10-05T20:42:23-04:00
-draft: true
+draft: false
 event_data:
   date: 2017-09-24T14:00:00-04:00
   location:

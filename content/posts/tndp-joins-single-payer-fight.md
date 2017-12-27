@@ -2,7 +2,7 @@
 title: "Tennessee State Democrats Join Single Payer Fight"
 date: 2017-11-20T16:28:11-05:00
 publishdate: 2017-11-20T16:28:11-05:00
-draft: true
+draft: false
 summary:
 post_image: '/img/daan-stevens-282446.jpg'
 

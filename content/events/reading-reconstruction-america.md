@@ -1,7 +1,7 @@
 ---
 title: "Reading Reconstruction America"
 date: 2017-10-11T16:29:18-04:00
-draft: true
+draft: false
 event_data:
   date: 2017-10-16T19:00:00-04:00
   location:

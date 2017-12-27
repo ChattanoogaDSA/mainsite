@@ -1,7 +1,7 @@
 ---
 title: "Donate"
 date: 2017-10-05T18:54:05-04:00
-draft: true
+draft: false
 ---
 
 <div class="donate_block"><a href="https://paypal.me/ChattanoogaDSA" class="paypal_donate">

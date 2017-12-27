@@ -1,7 +1,7 @@
 ---
 title: "Tim Faust Speaks On Medicare For All"
 date: 2017-12-27T17:49:08-05:00
-draft: true
+draft: false
 event_data:
   date: 2018-01-20T16:00:00-05:00 
   location:

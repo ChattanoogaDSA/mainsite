@@ -1,7 +1,7 @@
 ---
 title: "December OC Meeting"
 date: 2017-12-07T01:24:53-04:00
-draft: true
+draft: false
 post_image: 'img/get-organized.jpg'
 event_data:
   date: 2017-12-04T19:00:00-04:00
