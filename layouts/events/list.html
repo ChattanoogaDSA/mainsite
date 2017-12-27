@@ -7,38 +7,34 @@
 			<h2>Upcoming Events</h2>
 			<ul class="event_list">
 				{{ range (.Data.Pages.ByParam "event_data.date") }}
-					{{ if isset .Params "event_data" }}
-						{{ if ge (time (.Param "event_data.date")).Unix now.Unix }}
-							<li class="grid-margin-x grid-x">
-								<div class="cell medium-3 date">
-									<div class="inner_date">{{ dateFormat "Jan 2" (.Param "event_data.date") }}</div>
-								</div>
-								<div class="cell auto">
-									<a href="{{.Permalink}}" class="title h4">{{.Title}}</a>
-									<p>{{ .Param "event_data.blurb" }}</p>
-									<p><a href="{{.Permalink}}">[learn more]</a></p>
-								</div>
-							</li>
-						{{ end }}
+					{{ if ge (time (.Param "event_data.date")).Unix now.Unix }}
+						<li class="grid-margin-x grid-x">
+							<div class="cell medium-3 date">
+								<div class="inner_date">{{ dateFormat "Jan 2" (.Param "event_data.date") }}</div>
+							</div>
+							<div class="cell auto">
+								<a href="{{.Permalink}}" class="title h4">{{.Title}}</a>
+								<p>{{ .Param "event_data.blurb" }}</p>
+								<p><a href="{{.Permalink}}">[learn more]</a></p>
+							</div>
+						</li>
 					{{ end }}
 				{{ end }}
 			</ul>
-			<p class="h1">Past Events</p>
+			<p class="h2">Past Events</p>
 			<ul class="event_list">
 				{{ range (.Data.Pages.ByParam "event_data.date").Reverse }}
-					{{ if isset .Params "event_data" }}
-						{{ if lt (time (.Param "event_data.date")).Unix now.Unix }}
-							<li class="grid-margin-x grid-x">
-								<div class="cell medium-3 date">
-									<div class="inner_date">{{ dateFormat "Jan 2" (.Param "event_data.date") }}</div>
-								</div>
-								<div class="cell auto">
-									<a href="{{.Permalink}}" class="title h4">{{.Title}}</a>
-									<p>{{ .Param "event_data.blurb" }}</p>
-									<p><a href="{{.Permalink}}">[learn more]</a></p>
-								</div>
-							</li>
-						{{ end }}
+					{{ if lt (time (.Param "event_data.date")).Unix now.Unix }}
+						<li class="grid-margin-x grid-x">
+							<div class="cell medium-3 date">
+								<div class="inner_date">{{ dateFormat "Jan 2" (.Param "event_data.date") }}</div>
+							</div>
+							<div class="cell auto">
+								<a href="{{.Permalink}}" class="title h4">{{.Title}}</a>
+								<p>{{ .Param "event_data.blurb" }}</p>
+								<p><a href="{{.Permalink}}">[learn more]</a></p>
+							</div>
+						</li>
 					{{ end }}
 				{{ end }}
 			</ul>

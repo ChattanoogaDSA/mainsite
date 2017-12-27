@@ -15,8 +15,7 @@
 			<div>
 				<h4>Upcoming Events</h4>
 				<ul class="event_list">
-					{{ range ((where .Site.Pages "Section" "events").ByParam "event_data.date") }}
-					{{ if isset .Params "event_data" }}
+					{{ range ((where .Data.Pages "Section" "events").ByParam "event_data.date") }}
 					{{ if ge (time (.Param "event_data.date")).Unix now.Unix }}
 					<li class="grid-margin-x grid-x">
 						<div class="cell small-3 date">
@@ -27,7 +26,6 @@
 							<a href="{{.Permalink}}" class="title">{{ .Title }}</a>
 						</div>
 					</li>
-					{{ end }}
 					{{ end }}
 					{{ end }}
 				</ul>
