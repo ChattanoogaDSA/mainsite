@@ -34,7 +34,7 @@
 				{{ end }}
 
 				<li>
-					<a href="{{ .Site.BaseURL}}index.xml" title="RSS">
+					<a href='{{ "index.xml" | relURL }}' title="RSS">
 						<span class="fa-stack fa-lg">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -67,6 +67,6 @@
 			  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
 			  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.js"></script>
-<script src="{{ .Site.BaseURL }}/js/app.js" charset="utf-8"></script>
+<script src='{{ "/js/app.js" | relURL }}' charset="utf-8"></script>
 
 {{ template "_internal/google_analytics.html" . }}

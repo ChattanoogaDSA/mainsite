@@ -23,6 +23,7 @@ title = "Chattanooga Democratic Socialists of America"
   weight = 2
 [params]
   logo = "img/dsa-logo.png"
+  favicon = "img/dsa-logo.png"
 	facebook = "ChattanoogaDemocraticSocialistsofAmerica"
 	twitter = "dsa_chatt"
 	email = "chattanoogadsa@gmail.com"
