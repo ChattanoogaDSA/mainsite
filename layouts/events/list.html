@@ -4,40 +4,10 @@
 	<body>
 		{{ partial "nav.html" . }}
 		<div role="main" class="grid-container main-content">
-			<h2>Upcoming Events</h2>
-			<ul class="event_list">
-				{{ range (.Data.Pages.ByParam "event_data.date") }}
-					{{ if ge (time (.Param "event_data.date")).Unix now.Unix }}
-						<li class="grid-margin-x grid-x">
-							<div class="cell medium-3 date">
-								<div class="inner_date">{{ dateFormat "Jan 2" (.Param "event_data.date") }}</div>
-							</div>
-							<div class="cell auto">
-								<a href="{{.Permalink}}" class="title h4">{{.Title}}</a>
-								<p>{{ .Param "event_data.blurb" }}</p>
-								<p><a href="{{.Permalink}}">[learn more]</a></p>
-							</div>
-						</li>
-					{{ end }}
-				{{ end }}
-			</ul>
-			<p class="h2">Past Events</p>
-			<ul class="event_list">
-				{{ range (.Data.Pages.ByParam "event_data.date").Reverse }}
-					{{ if lt (time (.Param "event_data.date")).Unix now.Unix }}
-						<li class="grid-margin-x grid-x">
-							<div class="cell medium-3 date">
-								<div class="inner_date">{{ dateFormat "Jan 2" (.Param "event_data.date") }}</div>
-							</div>
-							<div class="cell auto">
-								<a href="{{.Permalink}}" class="title h4">{{.Title}}</a>
-								<p>{{ .Param "event_data.blurb" }}</p>
-								<p><a href="{{.Permalink}}">[learn more]</a></p>
-							</div>
-						</li>
-					{{ end }}
-				{{ end }}
-			</ul>
+			<h2>{{ .Title }}</h2>
+			<div class="">
+				{{.Content}}
+			</div>
 		</div>
 		{{ partial "footer.html" . }}
 	</body>
