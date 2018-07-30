@@ -4,8 +4,13 @@ date: 2017-10-05T18:54:05-04:00
 draft: false
 ---
 
-<div class="donate_block"><a href="https://paypal.me/ChattanoogaDSA" class="paypal_donate">
-<span class="fa fa-paypal fa-lg"></span> Donate to Chattanooga DSA
+<div class="grid-x">
+<div class="cell-small-6 donate_block"><a href="https://paypal.me/ChattanoogaDSA" class="paypal_donate">
+<span class="fab fa-paypal fa-lg"></span> Make a One-Time Donation
+</a></div>
+
+<div class="cell-small-6 donate_block"><a href="https://donorbox.org/chatt-dsa-sustainers" class="paypal_donate">
+<span class="fa fa-donate fa-lg"></span> Make a Recurring Donation
 </a></div>
 
 In analyzing the situation here in Chattanooga, TN, we have found that there is
