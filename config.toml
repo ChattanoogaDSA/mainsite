@@ -1,6 +1,7 @@
 baseURL = "https://chattanoogadsa.org/"
 languageCode = "en-us"
 title = "Chattanooga Democratic Socialists of America"
+buildDrafts = true
 [[menu.main]]
   name = "Home"
   identifier = "home"

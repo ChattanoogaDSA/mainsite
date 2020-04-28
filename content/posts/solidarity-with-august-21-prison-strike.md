@@ -4,7 +4,7 @@ date: 2018-07-30T16:28:11-05:00
 publishdate: 2018-07-30T16:28:11-05:00
 draft: false
 summary:
-post_image: '/img/lee-correctional-south-car.png'
+post_image: '/img/uploads/lee-correctional-south-car.png'
 
 ---
 July 30, 2018

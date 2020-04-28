@@ -40,7 +40,7 @@
 							<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
 						</span>
 					</a>
-				</li>		
+				</li>
 
 			</ul>
 			<div class="cell medium-5">
@@ -68,5 +68,17 @@
 			  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.js"></script>
 <script src='{{ "/js/app.js" | relURL }}' charset="utf-8"></script>
+
+<script>
+	if (window.netlifyIdentity) {
+		window.netlifyIdentity.on("init", user => {
+			if (!user) {
+				window.netlifyIdentity.on("login", () => {
+					document.location.href = "/admin/";
+				});
+			}
+		});
+	}
+</script>
 
 {{ template "_internal/google_analytics.html" . }}

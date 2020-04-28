@@ -1,0 +1,143 @@
+backend:
+  name: git-gateway
+
+publish_mode: editorial_workflow
+media_folder: static/img/uploads
+public_folder: /img/uploads
+logo_url: /img/dsa-logo.png
+
+collections:
+  - name: pages
+    label: Pages
+    create: false
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: home
+        label: Home
+        file: content/_index.md
+        fields:
+          - name: body
+            label: Content
+            widget: markdown
+            required: true
+      - name: join
+        label: Join
+        file: content/join.md
+        fields:
+          - name: title
+            label: Title
+            widget: string
+            required: true
+          - name: date
+            label: Date & Time
+            widget: datetime
+            required: true
+          - name: body
+            label: Content
+            widget: markdown
+            required: true
+      - name: donate
+        label: Donate
+        file: content/donate.md
+        fields:
+          - name: title
+            label: Title
+            widget: string
+            required: true
+          - name: date
+            label: Date & Time
+            widget: datetime
+            required: true
+          - name: body
+            label: Content
+            widget: markdown
+            required: true
+  - name: posts
+    label: Post
+    folder: content/posts
+    format: frontmatter
+    preview_path: posts/{{slug}}
+    preview_path_date_field: publishdate
+    create: true
+    sortableFields:
+      - publishdate
+      - title
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        required: true
+      - name: publishdate
+        label: Published Date & Time
+        widget: datetime
+        hint: "This post will not be visible until after this date."
+        required: true
+      - name: summary
+        label: Summary
+        widget: markdown
+        minimal: true
+        required: true
+      - name: post_image
+        label: Image
+        widget: image
+      - name: body
+        label: Post Text
+        widget: markdown
+        required: true
+  - name: events
+    label: Event
+    folder: content/events
+    format: frontmatter
+    preview_path: events/{{slug}}
+    preview_path_date_field: date
+    create: true
+    sortableFields:
+      - date
+      - title
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        required: true
+      - name: date
+        label: Date & Time
+        widget: datetime
+        required: true
+      - name: event_data
+        label: Event Info
+        widget: object
+        fields:
+          - name: date
+            label: Date & Time
+            widget: datetime
+            required: true
+          - name: location
+            label: Location
+            widget: object
+            fields:
+              - name: name
+                label: Name
+                widget: string
+              - name: address
+                label: Address
+                widget: string
+          - name: blurb
+            label: Summary
+            widget: markdown
+            minimal: true
+          - name: facebook_url
+            label: Facebook URL
+            widget: string
+          - name: eventbrite_url
+            label: Eventbrite URL
+            widget: string
+      - name: body
+        label: Full Description
+        widget: markdown
+        required: true
