@@ -1,0 +1,5 @@
+
+/** quick hack to align the DSA logo above the login popup */
+span[class*="CustomIconWrapper"] {
+  text-align: center;
+}

@@ -1,0 +1,1 @@
+This is the base of the [Netlify CMS](https://www.netlifycms.org/docs/add-to-your-site/)

@@ -4,7 +4,7 @@ date: 2017-11-20T16:28:11-05:00
 publishdate: 2017-11-20T16:28:11-05:00
 draft: false
 summary:
-post_image: '/img/daan-stevens-282446.jpg'
+post_image: '/img/uploads/daan-stevens-282446.jpg'
 
 ---
 Nov 20, 2017
