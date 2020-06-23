@@ -1,0 +1,71 @@
+.container-center {
+    @apply w-full mx-auto;
+}
+
+@screen sm {
+    .container-center {
+        max-width: theme('screens.sm');
+    }
+}
+@screen md {
+    .container-center {
+        max-width: theme('screens.md');
+    }
+}
+@screen lg {
+    .container-center {
+        max-width: theme('screens.lg');
+    }
+ }
+@screen xl {
+    .container-center {
+        max-width: theme('screens.xl');
+    }
+}
+
+.overflow-indicator {
+    /* todo */
+}
+
+.btn {
+    @apply bg-red-100 text-white-100;
+    @apply no-underline font-black uppercase tracking-widest text-sm;
+    @apply px-4 py-2;
+    @apply w-full;
+    @apply shadow-solid;
+    @apply block;
+}
+.btn:hover {
+    @apply bg-black-100 shadow-none underline;
+}
+
+@screen md {
+    .btn {
+        @apply w-auto;
+    }
+}
+
+.btn-inverted {
+    @apply bg-white-100 text-black-100;
+}
+.btn-inverted:hover {
+    @apply bg-black-100 text-white-100;
+}
+
+.btn-spaced {
+    @apply ml-0 mt-4;
+}
+
+@screen md {
+    .btn-spaced {
+        @apply ml-4;
+    }
+    .btn-spaced:first-child {
+        @apply ml-0;
+    }
+}
+
+.offscreen {
+    @apply absolute;
+    left: -5000px;
+}

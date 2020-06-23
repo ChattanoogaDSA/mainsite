@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  gridsome:
+    build:
+      dockerfile: docker/gridsome/Dockerfile
+      context: .
+      args:
+        DOCKER_UID: ${DOCKER_UID:-1000}
+        DOCKER_GID: ${DOCKER_GID:-1000}
+    environment:
+      DSA_DRAFTS_ALLOWED: "${DSA_DRAFTS_ALLOWED:-false}"
+    ports:
+      - "8080:8080"
+    command: gridsome develop
+    volumes:
+      - .:/app
+      - npm_cache:/home/node/.npm
+    working_dir: /app
+
+  serve-static:
+    build:
+      dockerfile: docker/serve-static/Dockerfile
+      context: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+      - npm_cache:/home/node/.npm
+    working_dir: /app
+
+volumes:
+  npm_cache:

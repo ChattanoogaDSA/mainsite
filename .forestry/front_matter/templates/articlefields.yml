@@ -1,0 +1,45 @@
+---
+label: ArticleFields
+hide_body: false
+display_field: name
+fields:
+- name: topic
+  type: select
+  default: []
+  config:
+    required: true
+    options: []
+    source:
+      type: pages
+      section: topics
+      file: 
+      path: 
+  label: Topic
+  description: The parent topic for this article. Only when the parent topic is active
+    will a user be able to access this article in the navigation.
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  description: The name of this article as it should appear in the sub-navigation
+    list under the topics. The name also appears in the URL.
+- name: draft
+  type: boolean
+  label: Draft
+  description: Draft articles are not visible on the live site.
+- name: rank
+  type: number
+  label: Rank
+  description: Used for ordering articles, lowest first.
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
+pages:
+- content/articles/bylaws.md
+- content/articles/national-dsa.md
+- content/articles/working-groups.md

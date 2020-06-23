@@ -1,0 +1,34 @@
+---
+label: TopicFields
+hide_body: false
+display_field: name
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  description: The name of this topic as it should appear in the top-level navigation.
+    The name also appears in the URL.
+- name: draft
+  type: boolean
+  label: Draft
+  description: Draft topics are not visible on the live site. That means nested articles
+    under this topic are not accessible either.
+- name: rank
+  type: number
+  label: Rank
+  description: 'Used for ordering topics, lowest first. '
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
+pages:
+- content/topics/dues-and-donations.md
+- content/topics/frequently-asked-questions.md
+- content/topics/join.md
+- content/topics/organization.md
+- content/topics/resources.md

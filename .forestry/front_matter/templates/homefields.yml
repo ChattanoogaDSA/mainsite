@@ -1,0 +1,23 @@
+---
+label: HomeFields
+hide_body: false
+display_field: name
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  description: This will show up in the user's tab.
+  default: DSA Chattanooga
+- name: callouts
+  type: blocks
+  label: Callouts
+  template_types:
+  - calloutfieldssingle
+  - calloutfieldsgrid
+  config:
+    min: 1
+    max: 
+  description: Highlights to bring to the user's attention and add visual interest
+    to the page.
