@@ -63,6 +63,21 @@ class DsaForestry {
         callout: Callout @reference(by: "id")
         callouts: [Callout] @reference(by: "id")
       }
+      
+      # not additional, but schema is normally derived
+      # from given documents. so if there are no documents, then 
+      # there's no other place to define this schema but here.
+      
+      type Alert implements Node @infer {
+        id: ID
+        name: String
+        link: String
+        linkText: String
+        alert: String
+        cookieName: String
+      }
+      
+      # todo add more schemas that could be empty here
     `
   }
 

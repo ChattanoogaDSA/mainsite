@@ -142,9 +142,7 @@ query {
       }
     }
   }
-  allAlert(
-      filter: {draft: {eq: false}}
-  ) {
+  allAlert {
     edges {
       node {
         id
