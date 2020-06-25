@@ -33,3 +33,4 @@ fields:
   description: These links appear as a group in the footer.
 pages:
 - content/footer-groups/national-dsa.md
+- content/footer-groups/partners.md
