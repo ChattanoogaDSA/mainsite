@@ -11,11 +11,13 @@
                       label="Email Address"
                       type="email"
                       name="EMAIL"
+                      ref="inputEmail"
                       required />
       <dsa-form-input class="w-full md:w-1/2 xl:w-1/3"
                       label="First Name"
                       type="text"
                       name="FNAME"
+                      ref="inputFname"
                       required />
     </div>
 
@@ -39,7 +41,20 @@
     },
     methods: {
       onSubmit () {
-        console.log('sending', this.formSubmitUrl)
+        if (!this.validate()) {
+          return
+        }
+        const data = {
+          EMAIL: this.$refs.inputEmail.trimmedValue,
+          FNAME: this.$refs.inputFname.trimmedValue,
+        }
+        console.log('sending', this.formSubmitUrl, data)
+      },
+      validate () {
+        return [
+          this.$refs.inputEmail.validate(),
+          this.$refs.inputFname.validate(),
+        ].every(x => x)
       },
     },
   }
