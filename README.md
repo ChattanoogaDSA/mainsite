@@ -26,7 +26,13 @@
    docker-compose run --rm gridsome yarn install
    ```
 
-4. Running individual gridsome commands
+4. Run the development server
+
+   ```
+   docker-compose up gridsome
+   ```
+   
+5. Running individual gridsome commands
 
    ```
    # build static site
