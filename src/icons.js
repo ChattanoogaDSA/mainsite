@@ -14,8 +14,10 @@ library.add(
 
 import {
   faEnvelope,
+  faCircleNotch,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
   faEnvelope,
+  faCircleNotch,
 )

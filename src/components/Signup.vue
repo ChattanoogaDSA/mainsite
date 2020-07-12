@@ -36,7 +36,7 @@
     </form>
 
     <p v-if="submitting && !submitted" class="font-bold text-base tracking-wider uppercase text-black-60">
-      Saving...
+      <fa-icon :icon="['fas', 'circle-notch']" class="fa-spin"></fa-icon> Saving...
     </p>
     <p v-if="submitted" class="font-bold text-base md:text-xl">
       Thank you for subscribing to our email list. You'll hear from us soon!
