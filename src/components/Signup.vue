@@ -1,54 +1,79 @@
 <template>
-  <form ref="form"
-        class="container-center px-4"
-        action="https://ajax-send"
-        @submit.prevent="onSubmit" >
+  <div class="container-center px-4">
+    <form ref="form"
+          v-if="!submitted && !submitting"
+          action="https://ajax-send"
+          @submit.prevent="onSubmit" >
 
-    <input class="offscreen" type="text" name="b_30e8b4a961e3a2a2ecf92c181_70c3b63a7d" tabindex="-1" />
+      <div class="pb-4">
+        <h3 class="font-extrabold text-lg md:text-xl tracking-wider uppercase">Stay informed</h3>
 
-    <div class="flex flex-col md:flex-row">
-      <dsa-form-input class="mr-0 md:mr-2 w-full md:w-1/2 xl:w-1/3"
-                      label="Email Address"
-                      type="email"
-                      name="EMAIL"
-                      ref="inputEmail"
-                      required />
-      <dsa-form-input class="w-full md:w-1/2 xl:w-1/3"
-                      label="First Name"
-                      type="text"
-                      name="FNAME"
-                      ref="inputFname"
-                      required />
-    </div>
+        <p class="text-base md:text-xl">
+          Getting on our email list is the easiest way to follow what
+          Chattanooga DSA is doing and to find ways you can get involved.
+        </p>
+      </div>
 
-    <button type="submit" class="mt-2 btn">
-      Subscribe
-    </button>
+      <div class="flex flex-col md:flex-row">
+        <dsa-form-input class="mr-0 md:mr-2 w-full md:w-1/2 xl:w-1/3"
+                        label="Email Address"
+                        type="email"
+                        name="email"
+                        ref="inputEmail"
+                        required />
+        <dsa-form-input class="w-full md:w-1/2 xl:w-1/3"
+                        label="First Name"
+                        type="text"
+                        name="fname"
+                        ref="inputFname"
+                        required />
+      </div>
 
-  </form>
+      <button type="submit" class="mt-2 btn">
+        Subscribe
+      </button>
+
+    </form>
+
+    <p v-if="submitting && !submitted" class="font-bold text-base tracking-wider uppercase text-black-60">
+      Saving...
+    </p>
+    <p v-if="submitted" class="font-bold text-base md:text-xl">
+      Thank you for subscribing to our email list. You'll hear from us soon!
+    </p>
+
+  </div>
+
 </template>
 
 <script>
+  import submitMailchimpForm from './mailchimp'
+
   import DsaFormInput from '~/components/FormInput.vue'
+
   export default {
     components: {
       DsaFormInput,
     },
-    computed: {
-      formSubmitUrl () {
-        return `https://facebook.us15.list-manage.com/subscribe/post-json?u=30e8b4a961e3a2a2ecf92c181&amp;id=70c3b63a7d&c=?`
-      },
+    data () {
+      return {
+        submitting: false,
+        submitted: false,
+      }
     },
     methods: {
-      onSubmit () {
+      async onSubmit () {
         if (!this.validate()) {
           return
         }
-        const data = {
-          EMAIL: this.$refs.inputEmail.trimmedValue,
-          FNAME: this.$refs.inputFname.trimmedValue,
-        }
-        console.log('sending', this.formSubmitUrl, data)
+        this.submitting = true
+
+        await submitMailchimpForm(
+          this.$refs.inputEmail.trimmedValue,
+          this.$refs.inputFname.trimmedValue)
+
+        this.submitting = false
+        this.submitted = true
       },
       validate () {
         return [

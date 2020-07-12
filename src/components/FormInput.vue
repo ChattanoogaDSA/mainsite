@@ -11,7 +11,7 @@
            :id="name"
            :type="type"
            required="required"
-           @focus="clearError"
+           v-on="mergedListeners"
            v-model="value"
            v-bind="$attrs" />
 
@@ -40,6 +40,12 @@
       trimmedValue () {
         return this.value.trim()
       },
+      mergedListeners () {
+        return {
+          ...this.$listeners,
+          focus: this.clearError.bind(this)
+        }
+      }
     },
     methods: {
       validate () {
