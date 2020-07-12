@@ -48,5 +48,3 @@ fields:
     remember that action and to avoid re-showing them the same alert over and over.
     This field specifies a <em>unique</em> name for that cookie that won''t conflict
     with future cookies. '
-pages:
-- content/alerts/draft.md
