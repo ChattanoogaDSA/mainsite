@@ -29,6 +29,9 @@
                         required />
       </div>
 
+      <!-- Mailchimp's bot catcher -->
+      <input class="offscreen" type="text" name="b_30e8b4a961e3a2a2ecf92c181_70c3b63a7d" tabindex="-1" />
+
       <button type="submit" class="mt-2 btn">
         Subscribe
       </button>
