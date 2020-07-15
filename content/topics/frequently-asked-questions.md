@@ -1,5 +1,5 @@
 ---
-rank: 50
+rank: 5
 name: FAQ
 draft: true
 

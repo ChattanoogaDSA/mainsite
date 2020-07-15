@@ -1,5 +1,5 @@
 ---
-rank: 40
+rank: 4
 name: Resources
 draft: false
 
