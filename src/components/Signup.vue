@@ -18,19 +18,19 @@
         <dsa-form-input class="mr-0 md:mr-2 w-full md:w-1/2 xl:w-1/3"
                         label="Email Address"
                         type="email"
-                        name="email"
+                        name="EMAIL"
                         ref="inputEmail"
                         required />
         <dsa-form-input class="w-full md:w-1/2 xl:w-1/3"
                         label="First Name"
                         type="text"
-                        name="fname"
+                        name="FNAME"
                         ref="inputFname"
                         required />
       </div>
 
       <!-- Mailchimp's bot catcher -->
-      <input class="offscreen" type="text" name="b_30e8b4a961e3a2a2ecf92c181_70c3b63a7d" tabindex="-1" />
+      <input class="offscreen" type="text" :name="mailchimpDecoyName" tabindex="-1" />
 
       <button type="submit" class="mt-2 btn">
         Subscribe
@@ -44,13 +44,16 @@
     <p v-if="submitted" class="font-bold text-base md:text-xl">
       Thank you for subscribing to our email list. You'll hear from us soon!
     </p>
+    <p v-if="submissionError" class="mt-4 text-base md:text-xl text-red-100">
+      {{submissionError}}
+    </p>
 
   </div>
 
 </template>
 
 <script>
-  import submitMailchimpForm from './mailchimp'
+  import {FormSubmitError, default as submitMailchimpForm} from './mailchimp'
 
   import DsaFormInput from '~/components/FormInput.vue'
 
@@ -62,6 +65,9 @@
       return {
         submitting: false,
         submitted: false,
+        submissionError: false,
+        mailchimpFormId: '568b434ef4d56d01e40c874e0&amp;id=00174e30acx',
+        mailchimpDecoyName: 'b_568b434ef4d56d01e40c874e0_00174e30ac',
       }
     },
     methods: {
@@ -71,12 +77,23 @@
         }
         this.submitting = true
 
-        await submitMailchimpForm(
-          this.$refs.inputEmail.trimmedValue,
-          this.$refs.inputFname.trimmedValue)
-
-        this.submitting = false
-        this.submitted = true
+        try {
+          await submitMailchimpForm(
+            this.mailchimpFormId,
+            this.mailchimpDecoyName,
+            this.$refs.inputEmail.trimmedValue,
+            this.$refs.inputFname.trimmedValue)
+          this.submitted = true
+        } catch (error) {
+          if (error instanceof FormSubmitError) {
+            this.submissionError = error
+          } else {
+            this.submissionError = 'There was an unexpected error when submitting the form'
+            console.error(error)
+          }
+        } finally {
+          this.submitting = false
+        }
       },
       validate () {
         return [
