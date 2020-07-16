@@ -1,6 +1,6 @@
 <template>
   <div class="container-center px-4">
-    <form action="https://gmail.us10.list-manage.com/subscribe/post?u=568b434ef4d56d01e40c874e0&amp;id=00174e30ac"
+    <form action="https://facebook.us15.list-manage.com/subscribe/post?u=30e8b4a961e3a2a2ecf92c181&amp;id=70c3b63a7d"
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
@@ -34,7 +34,7 @@
       <!-- Mailchimp's bot catcher -->
       <input class="offscreen"
              type="text"
-             name="b_568b434ef4d56d01e40c874e0_00174e30ac"
+             name="b_30e8b4a961e3a2a2ecf92c181_70c3b63a7d"
              tabindex="-1" />
 
       <button type="submit" class="mt-2 btn">
