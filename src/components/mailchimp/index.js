@@ -69,6 +69,8 @@ export default function submitMailchimpForm(u, decoy, email, fname) {
 
     xhr.open('GET', url)
 
+    xhr.withCredentials = true
+
     xhr.setRequestHeader('Content-Type', 'application/json; charset=utr-8')
     xhr.setRequestHeader('Accept', 'application/json')
 
