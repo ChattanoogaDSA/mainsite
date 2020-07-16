@@ -39,7 +39,7 @@
 
     <slot/>
 
-    <dsa-signup class="mb-8 mt-16"></dsa-signup>
+    <dsa-subscribe class="mb-8 mt-16"></dsa-subscribe>
 
     <dsa-footer>
       <template #icons>
@@ -81,7 +81,7 @@
   import DsaNavBar from '~/components/NavBar'
   import DsaNavItem from '~/components/NavItem'
   import DsaNavItemSecondary from '~/components/NavItemSecondary'
-  import DsaSignup from '~/components/Signup'
+  import DsaSubscribe from '~/components/Subscribe'
   import DsaSocialIcon from '~/components/SocialIcon'
 
   export default {
@@ -94,7 +94,7 @@
       DsaNavBar,
       DsaNavItem,
       DsaNavItemSecondary,
-      DsaSignup,
+      DsaSubscribe,
       DsaSocialIcon,
     },
     computed: {

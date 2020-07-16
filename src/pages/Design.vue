@@ -290,8 +290,8 @@
     </section>
 
     <section class="mb-8">
-      <dsa-section-legend>Signup</dsa-section-legend>
-      <dsa-signup></dsa-signup>
+      <dsa-section-legend>Subscribe</dsa-section-legend>
+      <dsa-subscribe></dsa-subscribe>
     </section>
 
     <section>
@@ -385,7 +385,7 @@
   import DsaNavItem from '~/components/NavItem'
   import DsaNavItemSecondary from '~/components/NavItemSecondary'
   import DsaSectionLegend from '~/components/SectionLegend'
-  import DsaSignup from '~/components/Signup.vue'
+  import DsaSubscribe from '~/components/Subscribe.vue'
   import DsaSocialIcon from '~/components/SocialIcon.vue'
 
   export default {
@@ -405,7 +405,7 @@
       DsaNavItem,
       DsaNavItemSecondary,
       DsaSectionLegend,
-      DsaSignup,
+      DsaSubscribe,
       DsaSocialIcon,
     },
   }
