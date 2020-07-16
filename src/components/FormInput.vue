@@ -1,8 +1,8 @@
 <template>
   <div>
     <label class="block text-xs text-red-100 uppercase font-bold tracking-widest"
-           :for="name" v-html="label">
-
+           :for="name">
+      {{label}}
     </label>
 
     <input class="p-2 w-full bg-white-100 border-solid border-2"
@@ -11,6 +11,7 @@
            :id="name"
            :type="type"
            required="required"
+           ref="input"
            v-on="mergedListeners"
            v-model="value"
            v-bind="$attrs" />
