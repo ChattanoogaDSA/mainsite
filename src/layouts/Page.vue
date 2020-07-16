@@ -39,6 +39,8 @@
 
     <slot/>
 
+    <dsa-signup class="mb-8 mt-16"></dsa-signup>
+
     <dsa-footer>
       <template #icons>
         <dsa-social-icon v-for="link in socialIcons"
@@ -79,6 +81,7 @@
   import DsaNavBar from '~/components/NavBar'
   import DsaNavItem from '~/components/NavItem'
   import DsaNavItemSecondary from '~/components/NavItemSecondary'
+  import DsaSignup from '~/components/Signup'
   import DsaSocialIcon from '~/components/SocialIcon'
 
   export default {
@@ -91,6 +94,7 @@
       DsaNavBar,
       DsaNavItem,
       DsaNavItemSecondary,
+      DsaSignup,
       DsaSocialIcon,
     },
     computed: {
