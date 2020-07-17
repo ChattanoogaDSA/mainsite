@@ -2,14 +2,7 @@
 name: DSA Chattanooga
 callouts:
 - template: calloutfieldssingle
-  callout: content/callouts/blm.md
-- template: calloutfieldsgrid
-  callouts:
-  - content/callouts/announce-platform.md
-  - content/callouts/covid-19-gumbo.md
-  - content/callouts/test.md
-- template: calloutfieldssingle
-  callout: content/callouts/covid-19-gumbo.md
+  callout: content/callouts/we-are-socialists.md
 
 ---
 # Chattanooga DSA
