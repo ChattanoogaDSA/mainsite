@@ -39,3 +39,5 @@ fields:
   label: Buttons
   description: The callout should be short and sweet relying on these links to direct
     the user to more information.
+pages:
+- content/callouts/we-are-socialists.md
