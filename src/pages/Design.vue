@@ -164,6 +164,16 @@
           Fusce in rhoncus justo, sed bibendum sem. In hac habitasse platea dictumst. Ut non odio non diam hendrerit luctus. Praesent commodo lacus vel nisl ultricies sodales. Etiam massa leo, aliquet in nunc in, mollis malesuada velit. Aliquam massa magna, pulvinar eget purus ut, posuere cursus lacus. Donec lobortis purus nibh, eget fermentum ante semper sit amet. Ut vitae vestibulum nisi, in elementum est. Suspendisse potenti.
         </p>
 
+        <blockquote>
+          <p>
+            This is a quote. Tincidunt eget nullam non nisi est sit amet facilisis magna. Dui id ornare arcu odio ut. Sit amet luctus venenatis lectus magna.
+          </p>
+          <p>
+            Mattis molestie a iaculis at erat pellentesque adipiscing. Sem viverra aliquet eget sit amet. Massa tempor nec feugiat nisl pretium. Malesuada pellentesque elit eget gravida cum. Senectus et netus et malesuada fames. Scelerisque purus semper eget duis. Varius vel pharetra vel turpis nunc.
+          </p>
+          <footer>Author N. Here, <cite>From Book XYZ</cite></footer>
+        </blockquote>
+
         <h3>H3 Header</h3>
         <p>
           Etiam massa leo, aliquet in nunc in, mollis malesuada velit.

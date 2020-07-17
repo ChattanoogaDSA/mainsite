@@ -124,3 +124,15 @@
         @apply text-base;
     }
 }
+
+.content blockquote {
+    @apply border-l-2;
+    @apply pl-4;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+.content blockquote p:last-of-type::after {
+    content: close-quote;
+}
+.content blockquote p:first-of-type::before {
+    content: open-quote;
+}
