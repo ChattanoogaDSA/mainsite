@@ -126,10 +126,14 @@
 }
 
 .content blockquote {
-    @apply border-l-2;
-    @apply pl-4;
+    @apply border-l-2 pl-4;
     quotes: "\201C""\201D""\2018""\2019";
 }
+
+.content blockquote p {
+    @apply font-light;
+}
+
 .content blockquote p:last-of-type::after {
     content: close-quote;
 }
