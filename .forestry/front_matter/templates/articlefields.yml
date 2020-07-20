@@ -39,6 +39,3 @@ fields:
     max: 
     step: 
     required: true
-pages:
-- content/articles/bylaws.md
-- content/articles/national-dsa.md
