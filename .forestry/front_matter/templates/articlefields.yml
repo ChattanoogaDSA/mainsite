@@ -11,7 +11,7 @@ fields:
     options: []
     source:
       type: pages
-      section: topics
+      section: topic
       file: 
       path: 
   label: Topic
