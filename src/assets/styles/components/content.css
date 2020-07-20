@@ -90,6 +90,12 @@
 .content a {
     @apply underline font-semibold;
 }
+.content a.btn {
+    @apply no-underline;
+}
+.content a.btn:hover {
+    @apply underline;
+}
 
 /* Preventing portrait images from overtaking the page */
 .content img.g-image {
