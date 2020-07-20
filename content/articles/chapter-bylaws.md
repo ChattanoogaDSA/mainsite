@@ -1,5 +1,5 @@
 ---
-topic: []
+topic: content/topics/organization.md
 rank: 10
 name: Chapter Bylaws
 draft: false
