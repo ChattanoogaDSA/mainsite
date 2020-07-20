@@ -39,3 +39,5 @@ fields:
     max: 
     step: 
     required: true
+pages:
+- content/articles/chapter-bylaws.md
