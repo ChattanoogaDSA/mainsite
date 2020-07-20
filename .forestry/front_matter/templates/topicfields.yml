@@ -28,7 +28,6 @@ fields:
     required: true
 pages:
 - content/topics/dues-and-donations.md
-- content/topics/frequently-asked-questions.md
 - content/topics/join.md
 - content/topics/organization.md
 - content/topics/resources.md
