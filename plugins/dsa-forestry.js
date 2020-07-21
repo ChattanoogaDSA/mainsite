@@ -51,6 +51,9 @@ class DsaForestry {
       }
       
       type Article implements Node @infer {
+        name: String
+        rank: Int
+        draft: Boolean
         topic: Topic @reference(by: "id")
       }
       
