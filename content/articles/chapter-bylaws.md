@@ -2,7 +2,7 @@
 topic: content/topics/organization.md
 rank: 10
 name: Chapter Bylaws
-draft: false
+draft: true
 
 ---
 ## Bylaws of the Chattanooga, Tennessee Local Chapter of the Democratic Socialists of America
