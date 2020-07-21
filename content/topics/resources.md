@@ -1,7 +1,7 @@
 ---
 rank: 4
 name: Resources
-draft: false
+draft: true
 
 ---
 # Resources
