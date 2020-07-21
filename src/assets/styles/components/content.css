@@ -47,7 +47,7 @@
 
 .content ul,
 .content ol {
-    @apply pl-8;
+    @apply pl-8 pb-4;
     @apply -ml-2;
 }
 
