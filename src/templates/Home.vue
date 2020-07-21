@@ -1,5 +1,9 @@
 <template>
   <dsa-page>
+    <div class="content container-center px-4">
+      <div v-html="home.content"></div>
+    </div>
+
     <callouts-template :callouts="home.callouts">
       <template v-slot:title="{co}">
         {{co.header}}
@@ -18,9 +22,6 @@
         </dsa-callout-btn>
       </template>
     </callouts-template>
-    <div class="content container-center px-4">
-      <div v-html="home.content"></div>
-    </div>
   </dsa-page>
 </template>
 
