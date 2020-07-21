@@ -1,6 +1,6 @@
 ---
 rank: 2
-name: What We Do
+name: Our Work
 draft: false
 
 ---
