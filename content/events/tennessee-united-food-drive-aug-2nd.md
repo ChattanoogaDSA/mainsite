@@ -1,5 +1,5 @@
 ---
-name: Tennesse United Food Drive
+name: Tennessee United Food Drive
 draft: false
 date: 2020-08-02T12:00:00Z
 startTime: 2020-07-01T16:30:00Z
