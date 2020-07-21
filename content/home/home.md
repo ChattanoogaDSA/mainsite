@@ -24,10 +24,10 @@ We want a better, more socialist future for all. Here are some of systemic chang
 
 **The members in our chapter believe that democratic socialism will gain support in Chattanooga.** We want to connect and support the fights for equality and justice already underway here — and add our own perspective where it’s welcome.
 
-A better world is possible. 
+A better world is possible. Join us, and let’s begin to build it!
 
-<div class="container-center flex py-8">
-  <a class="btn" target="_blank" href="/join">
-    Join us, and let’s begin to build it!
+<div class="container-center flex pb-8 pt-4">
+  <a class="btn" href="/join" title="join today">
+    Become a member today
   </a>
 </div>
