@@ -27,7 +27,7 @@ fields:
     step: 
     required: true
 pages:
-- content/topics/dues-and-donations.md
+- content/topics/donate.md
 - content/topics/join.md
 - content/topics/our-work.md
 - content/topics/resources.md
