@@ -39,7 +39,9 @@ Chattanooga DSA firmly believes that affordable housing is a human right and per
 
 <br>
 <br>
+
 Check back soon for details about our focus areas, or click the Join link at the top of this page to talk to us about how you can get involved ASAP!
+
 <br>
 <br>
 
