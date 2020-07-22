@@ -19,7 +19,7 @@ The Chattanooga Police Department (CPD) commands $70 Million of the total city b
 * Impending skatepark (city funded)
 * Chattanooga Area Food Bank.
 
-    todo - mention our involvment with BLM protests, links to press articles
+##### todo - mention our involvement with BLM protests, links to press articles
 
 ## Tenant Rights
 
@@ -31,11 +31,11 @@ Chattanooga DSA firmly believes that affordable housing is a human right and per
 
 ## COVID-19 Respone & Mutual Aid
 
-    todo - discussion pressure campaign and mutual aid activities, link to press articles
+##### todo - discussion pressure campaign and mutual aid activities, link to press articles
 
 ## Bernie 2020
 
-    todo - describe our involvement doing local canvassing for Bernie
+##### todo - describe our involvement doing local canvassing for Bernie
 
 <br>
 <br>
@@ -49,7 +49,7 @@ Check back soon for details about our focus areas, or click the Join link at the
 
 <br>
 
-_(This is some initial content added by Katie. I've added them as "todo" items above.)_ 
+_(This is some initial content added by Katie. I've added them as "todo" items above.)_
 
 * [Our involvement](https://www.timesfreepress.com/news/local/story/2020/jun/17/activists-protest-house/525571/ "Our involvement") in the nationwide #BlackLivesMatter protest uprising
   * And our [work to push city council to defund the police](https://www.timesfreepress.com/news/local/story/2020/jul/11/after-alleged-political-stonewalling-chattano/527331/#/questions "work to push city council to defund the police")
