@@ -7,6 +7,19 @@
       <div class="flex flex-col sm:flex-row sm:flex-wrap lg:justify-center sm:-mr-8">
         <slot name="links"></slot>
       </div>
+      <div class="flex justify-center mt-32">
+        <dsa-logo-image-national></dsa-logo-image-national>
+      </div>
     </div>
   </footer>
 </template>
+
+<script>
+  import DsaLogoImageNational from './LogoImageNational'
+
+  export default {
+    components: {
+      DsaLogoImageNational
+    }
+  }
+</script>

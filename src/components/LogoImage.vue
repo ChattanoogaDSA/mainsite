@@ -3,5 +3,5 @@
               md:-ml-4 -ml-2
               self-center sm:self-auto"
        src="../assets/images/cha-flower-450x450.svg"
-       alt="Chattanooga DSA Banner Logo">
+       alt="Chattanooga DSA Logo">
 </template>
