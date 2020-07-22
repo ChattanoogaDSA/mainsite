@@ -30,6 +30,11 @@
           case 'email':
           case 'envelope':
             return ['fas', 'envelope']
+          case 'meetup':
+            return ['fab', 'meetup']
+          case 'call':
+          case 'phone':
+            return ['fas', 'phone']
           case 'blank':
           default:
             return ['fas', 'meh-blank']
