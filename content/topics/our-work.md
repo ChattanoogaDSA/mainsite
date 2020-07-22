@@ -19,7 +19,9 @@ The Chattanooga Police Department (CPD) commands $70 Million of the total city b
 * Impending skatepark (city funded)
 * Chattanooga Area Food Bank.
 
+```
     todo - mention our involvment with BLM protests, links to press articles
+```
 
 ## Tenant Rights
 
