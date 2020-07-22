@@ -19,7 +19,7 @@ The Chattanooga Police Department (CPD) commands $70 Million of the total city b
 * Impending skatepark (city funded)
 * Chattanooga Area Food Bank.
 
-### **Tenant Rights**
+### Tenant Rights
 
 The COVID-19 health crisis has laid bare the unequal treatment of tenants both in our society as a whole and Chattanooga specifically. As a result, Chattanooga DSA calls for the suspension of residential and commercial rents, property taxes, and mortgages as well as a moratorium on evictions and foreclosures. Additionally, no essential services should be shut off during this pandemic. Chattanooga DSA is working locally with community partners to advocate for tenants currently facing evictions.
 
