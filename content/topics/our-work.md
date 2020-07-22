@@ -37,6 +37,22 @@ Chattanooga DSA firmly believes that affordable housing is a human right and per
 
 ##### todo - describe our involvement doing local canvassing for Bernie
 
+## Immigrant Rights
+
+##### todo - describe work with Tennessee United
+
+## Medicare For All
+
+##### todo
+
+## Climate Justice
+
+##### todo
+
+## Workers' Rights
+
+##### todo
+
 <br>
 <br>
 
