@@ -8,7 +8,7 @@
           @submit="onSubmit">
 
       <div class="pb-4">
-        <h3 class="font-extrabold text-lg md:text-xl tracking-wider uppercase">Stay informed</h3>
+        <h2 class="font-extrabold text-lg md:text-xl tracking-wider uppercase">Stay informed</h2>
 
         <p class="text-base md:text-xl">
           Getting on our email list is the easiest way to follow what

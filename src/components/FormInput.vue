@@ -5,7 +5,7 @@
       {{label}}
     </label>
 
-    <input class="p-2 w-full bg-white-100 border-solid border-2"
+    <input class="p-2 w-full bg-white-100 border-solid border-2 focus:shadow-outline"
            :class="error ? 'border-red-100': 'border-black-100'"
            :name="name"
            :id="name"

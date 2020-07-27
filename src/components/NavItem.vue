@@ -3,6 +3,7 @@
             no-underline
             first:ml-0 mr-2 ml-2 lg:ml-4 lg:ml-4
             outline-none
+            focus:border-black-100 focus:border-dotted
             border-solid border-b-4
             hover:text-red-100 hover:border-black-100"
      :class="active ? 'border-red-100': 'border-transparent'"

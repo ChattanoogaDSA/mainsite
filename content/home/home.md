@@ -5,7 +5,7 @@ callouts:
   callout: content/callouts/we-are-socialists.md
 
 ---
-# Who We Are
+## Who We Are
 
 The [Democratic Socialists of America (DSA)](https://www.dsausa.org/ "DSA National") is the largest socialist organization in the United States with over 70,000 members nationally. We believe that **working people should run both the economy and society democratically to meet human needs**, not to make profits for a few. 
 
@@ -25,7 +25,7 @@ We want a better, more socialist future for all. Here are some of systemic chang
 **The members in our chapter believe that democratic socialism will gain support in Chattanooga.** We want to connect and support the fights for equality and justice already underway here — and add our own Chattanooga twist.
 
 <div class="container-center flex pb-8 pt-4">
-<a class="btn" href="/join" title="join today">
+<a class="btn" href="/join">
 Become a member today
 </a>
 </div>
