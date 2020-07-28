@@ -1,8 +1,8 @@
 <template>
   <dsa-page>
-    <div class="content container-center px-4">
+    <article class="content container-center px-4">
       <div v-html="article.content"></div>
-    </div>
+    </article>
   </dsa-page>
 </template>
 

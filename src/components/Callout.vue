@@ -5,9 +5,6 @@
         <h3 class="font-black pb-2" :class="tight ? 'text-2xl leading-tight' : 'text-4xl'">
           <slot name="title"></slot>
         </h3>
-        <p class="font-bold uppercase tracking-widest" :class="{'text-sm': tight}" v-if="subtitle">
-          <slot name="subtitle"></slot>
-        </p>
       </div>
       <div class="content content-inverted mb-4" :class="{'content-tight': tight}">
         <slot></slot>

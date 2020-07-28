@@ -37,6 +37,7 @@
       </template>
     </dsa-nav-bar>
 
+    <!-- This is where the content of the page is output -->
     <slot/>
 
     <dsa-subscribe class="mb-8 mt-16"></dsa-subscribe>
