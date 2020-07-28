@@ -17,6 +17,9 @@
 
     <dsa-nav-bar>
       <template #primary>
+        <dsa-nav-item to="/" :active="!activeTopic">
+          {{homeName}}
+        </dsa-nav-item>
         <dsa-nav-item v-for="topic in topics"
                       :key="topic.id"
                       :to="topic.path"
@@ -98,6 +101,9 @@
       DsaSocialIcon,
     },
     computed: {
+      homeName () {
+        return this.$static.allHome.edges[0].node.name
+      },
       topics () {
         return this.$static.allTopic.edges.map(e => e.node)
       },
@@ -178,6 +184,13 @@ query {
           link
           helpText
         }
+      }
+    }
+  }
+  allHome (limit: 1) {
+    edges {
+      node {
+        name
       }
     }
   }
