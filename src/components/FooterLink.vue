@@ -1,6 +1,6 @@
 <template>
   <div class="my-1 flex">
-    <span class="bg-white-100 w-2 h-2 self-center mr-2">&nbsp;</span>
+    <span class="bg-white-100 w-2 h-2 mt-2 mr-2 flex-shrink-0">&nbsp;</span>
     <a class="no-underline hover:underline" :href="href" :target="target" :rel="rel" v-bind="$attrs">
       <slot></slot>
     </a>

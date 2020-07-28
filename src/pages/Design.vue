@@ -359,7 +359,7 @@
 
           <dsa-footer-group>
             <template #header>And More Things Here</template>
-            <dsa-footer-link href="#nowhere">Deleniti eum magnam repudiandae</dsa-footer-link>
+            <dsa-footer-link href="#nowhere">Deleniti eum magnam repudiandae and it gets really really long here. Very long.</dsa-footer-link>
             <dsa-footer-link href="#nowhere">Dignissimos dolores necessitatibus</dsa-footer-link>
             <dsa-footer-link href="#nowhere">Harum minima neque quasi totam!</dsa-footer-link>
             <dsa-footer-link href="#nowhere">Dicta inventore molestiae</dsa-footer-link>
