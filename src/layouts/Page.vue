@@ -162,7 +162,10 @@ query {
       }
     }
   }
-  allFooterGroup {
+  allFooterGroup(
+    sortBy: "rank",
+    order: ASC
+  ) {
     edges {
       node {
         id
