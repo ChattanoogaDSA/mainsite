@@ -63,8 +63,6 @@
 
           <dsa-footer-link v-for="link in fg.links"
                            :key="link.link"
-                           target="_blank"
-                           rel="nofollow"
                            :href="link.link">
             {{link.name}}
           </dsa-footer-link>
