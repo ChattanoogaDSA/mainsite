@@ -2,6 +2,6 @@
 name: Feedback
 links:
 - name: Accessibility
-  link: "/accessibility"
+  link: "/article/accessibility"
 
 ---
