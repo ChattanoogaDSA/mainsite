@@ -10,6 +10,17 @@ fields:
   label: Group Name
   description: The name of this resource group shows up as header above the links
     in the footer.
+- name: rank
+  type: number
+  description: Mechanism for ordering the groups from left to right, lowest to highest
+    rank.
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: Rank
 - name: links
   type: field_group_list
   fields:
