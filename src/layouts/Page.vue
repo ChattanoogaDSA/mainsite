@@ -17,7 +17,7 @@
 
     <dsa-nav-bar>
       <template #primary>
-        <dsa-nav-item to="/" :active="!activeTopic">
+        <dsa-nav-item to="/" :active="/^\/$/.test($route.path)">
           {{homeName}}
         </dsa-nav-item>
         <dsa-nav-item v-for="topic in topics"
