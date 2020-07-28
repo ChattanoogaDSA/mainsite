@@ -1,5 +1,7 @@
 <template>
-  <span class="rounded-full bg-black-100 h-16 w-16 ml-4 first:ml-0 flex items-center justify-center">
+  <span class="rounded-full bg-black-100 h-16 w-16
+               mr-4 mt-4 last:mr-0
+               flex items-center justify-center">
     <a class="bg-white-100 text-red-100 hover:text-black-100 text-2xl
               rounded-full h-12 w-12
               flex items-center justify-center"
