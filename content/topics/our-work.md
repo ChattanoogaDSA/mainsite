@@ -37,42 +37,35 @@ The coronavirus pandemic has laid bare like never before the inherent cruelty of
 
 ## Bernie 2020
 
-The Democratic Socialists of America endorsed Bernie Sanders in the 2020 Democratic primary campaign, and we proudly ran an IEC here in Chattanooga to that end. We knocked doors and made calls for Bernie all over Chattanooga from October to March, spread the word about DSA, and formed new relationships with people in our community.  
+The Democratic Socialists of America endorsed Bernie Sanders in the 2020 Democratic primary campaign, and we proudly ran an IEC here in Chattanooga to that end. We knocked doors and made calls for Bernie all over Chattanooga from October to March, spread the word about DSA, and formed new relationships with people in our community.
 
 [Bernie’s platform](https://berniesanders.com/issues/) is absolutely transformative for millions of Americans and will guide us as we develop our voter guides and candidate endorsement criteria for local, state and federal elections in 2020 and beyond.
 
-## Immigrant Rights
-
-##### todo - describe work with Tennessee United
-
 ## Medicare For All
 
-##### todo
+Once again, the current health crisis has exposed a glaring deficiency in our society. As companies continue to layoff workers at unprecedented levels, US citizens are losing health coverage at an alarming rate. We need a healthcare system that prioritizes the health of citizens and not the profits and inflated executive salaries of healthcare companies. We support a free, single payer universal healthcare system that provides comprehensive coverage for all people. The broken system currently in place must be dismantled and replaced. We are working with the national chapter to advocate for the Health Care Emergency Guarantee Act.
 
 ## Climate Justice
 
-##### todo
+The Intergovernmental Panel on Climate Change (IPCC) issued a special report in 2018 that warned that, “without societal transformation and rapid implementation of ambitious greenhouse gas reduction measures, pathways to limiting warming to 1.5°C and achieving sustainable development will be exceedingly difficult, if not impossible, to achieve.” We are on the precipice of calamity. We believe that a Green New Deal is a necessary step towards backing off the edge of global ecological disaster. The following guiding principles shape our efforts in fighting for climate justice:
+
+1. Decarbonize the economy fully by 2030
+2. Democratize control over major energy systems and resources
+3. Center the working class in just transition to an economy of social and ecological care
+4. Decommodify survival
+5. Reinvent communities to serve people and planet, not profit
+6. Demilitarize, decolonize, and strive for a future of international solidarity and cooperation
+7. Redistribute resources from the worst polluters
+
+We are working with the national chapter’s working group (DSA Ecosocialists) to advance these principles locally.
 
 ## Workers' Rights
 
-##### todo
+Confronted with a deepening health crisis and a threat to labor, business owners have accelerated worker exploitation. They have taken advantage of the current crisis by:
 
-<br>
-<br>
+* Increasing the intensity of labor
+* Failing to provide adequate health and safety measures
+* Laying off workers and demanding the remainder to pick up the slack
+* Refusing to include hazard pay
 
-Check back soon for details about our focus areas, or click the Join link at the top of this page to talk to us about how you can get involved ASAP!
-
-<br>
-<br>
-
-***
-
-<br>
-
-_(This is some initial content added by Katie. I've added them as "todo" items above.)_
-
-* [Our involvement](https://www.timesfreepress.com/news/local/story/2020/jun/17/activists-protest-house/525571/ "Our involvement") in the nationwide #BlackLivesMatter protest uprising
-  * And our [work to push city council to defund the police](https://www.timesfreepress.com/news/local/story/2020/jul/11/after-alleged-political-stonewalling-chattano/527331/#/questions "work to push city council to defund the police")
-* Our work to create a COVID mutual aid network in Chattanooga
-  * And our [pressure campaign](https://www.chattanoogan.com/2020/4/22/407956/Local-Democratic-Socialists-Issue.aspx "pressure campaign") to make our leaders [do their jobs](https://www.change.org/p/chattanooga-dsa-covid-19-demands-list-to-government-and-business-leaders "do their jobs")
-* Our [canvassing work](https://www.facebook.com/events/1337535569750804/ "canvassing work") for the Bernie Sanders 2020 primary campaign
+All the while, they have implemented price gouging on high demand products just manufactured and stocked by underpaid, underprotected workers. It is as important as ever that we have a robust, organized labor force to push back on the mistreatment of the holders of capital. We are working with local organizations to advance the cause of the worker in our community.
