@@ -7,5 +7,6 @@ links:
   link: https://act.dsausa.org/donate/membership_redesign/
 - name: Store
   link: https://store.dsausa.org/
+rank: 10
 
 ---
