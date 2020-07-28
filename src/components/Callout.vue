@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col bg-red-100 text-white-100 p-4" :class="tight ? 'w-full md:w-1/2 lg:w-1/3' : 'container-center'">
     <div class="flex-grow">
-      <div class="mb-8">
+      <div class="mb-4">
         <h1 class="font-black pb-2" :class="tight ? 'text-2xl leading-tight' : 'text-4xl'">
           <slot name="title"></slot>
         </h1>
