@@ -8,8 +8,9 @@ fields:
   config:
     required: true
   label: Name
-  description: This will show up in the user's tab.
   default: DSA Chattanooga
+  description: For easier navigation, the home page shows up in the primary navbar
+    with this name.
 - name: callouts
   type: blocks
   label: Callouts

@@ -40,4 +40,5 @@ fields:
     step: 
     required: true
 pages:
+- content/articles/accessibility.md
 - content/articles/chapter-bylaws.md

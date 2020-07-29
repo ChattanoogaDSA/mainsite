@@ -4,7 +4,8 @@
 .content h4,
 .content h5,
 .content h6 {
-    @apply pt-4;
+    @apply py-4;
+    @apply leading-tight;
 }
 
 .content h1 {

@@ -17,6 +17,9 @@
 
     <dsa-nav-bar>
       <template #primary>
+        <dsa-nav-item to="/" :active="/^\/$/.test($route.path)">
+          {{homeName}}
+        </dsa-nav-item>
         <dsa-nav-item v-for="topic in topics"
                       :key="topic.id"
                       :to="topic.path"
@@ -61,8 +64,6 @@
 
           <dsa-footer-link v-for="link in fg.links"
                            :key="link.link"
-                           target="_blank"
-                           rel="nofollow"
                            :href="link.link">
             {{link.name}}
           </dsa-footer-link>
@@ -99,6 +100,9 @@
       DsaSocialIcon,
     },
     computed: {
+      homeName () {
+        return this.$static.allHome.edges[0].node.name
+      },
       topics () {
         return this.$static.allTopic.edges.map(e => e.node)
       },
@@ -159,7 +163,10 @@ query {
       }
     }
   }
-  allFooterGroup {
+  allFooterGroup(
+    sortBy: "rank",
+    order: ASC
+  ) {
     edges {
       node {
         id
@@ -179,6 +186,13 @@ query {
           link
           helpText
         }
+      }
+    }
+  }
+  allHome (limit: 1) {
+    edges {
+      node {
+        name
       }
     }
   }

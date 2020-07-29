@@ -1,5 +1,5 @@
 ---
-name: DSA Chattanooga
+name: Who We Are
 callouts:
 - template: calloutfieldssingle
   callout: content/callouts/we-are-socialists.md
