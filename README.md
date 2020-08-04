@@ -1,10 +1,6 @@
-## Chattanooga DSA
-
-This is the repository for the Chattanooga DSA website ([dsachattanooga.org](https://dsachattanooga.org)). It is a [static site](https://davidwalsh.name/introduction-static-site-generators) built with basic [hugo](https://gohugo.io/) . 
+# Chattanooga DSA - Website
 
 ### Local Development
-
-> Note that this site was built with and currently running **hugo version 0.31**. When developing, you'll need to use that version too until we can upgrade.
 
 ##### With Docker
 
@@ -15,55 +11,58 @@ This is the repository for the Chattanooga DSA website ([dsachattanooga.org](htt
    cd mainsite
    ```
 
-2. Build the hugo container
+2. Build the gridsome/node container (for production)
 
    ```
-   docker-compose build hugo
+   docker-compose build gridsome
    
    # or if you're on linux, set container user IDs to match host
-   docker-compose build --build-arg DOCKER_UID=$(id -u) --build-arg DOCKER_GID=$(id -g) hugo 
+   docker-compose build --build-arg DOCKER_UID=$(id -u) --build-arg DOCKER_GID=$(id -g) gridsome 
    ```
 
-3. Running individual hugo commands
+3. Install dependencies
+
+   ```
+   docker-compose run --rm gridsome yarn install
+   ```
+
+4. Run the development server
+
+   ```
+   docker-compose up gridsome
+   ```
+   
+5. Running individual gridsome commands
 
    ```
    # build static site
-   docker-compose run --rm hugo
+   docker-compose run --rm gridsome gridsome build
    
-   # run the local server @ http://localhost:1313
-   docker-compose run --rm --service-ports hugo hugo server -b http://localhost:1313 --bind 0.0.0.0
+   # run the local server @ http://localhost:8080
+   docker-compose run --rm --service-ports gridsome gridsome develop
    
    # or just shell into the container and work from there
-   docker-compose run --rm --service-ports hugo bash
-   $ hugo server -b http://localhost:1313 --bind 0.0.0.0
+   docker-compose run --rm --service-ports gridsome bash
+   $ gridsome develop
+   
+   # view the built site (as it would be in production)
+   docker-compose run --rm --service-ports --name dsasite-static serve-static
    ```
 
-### Netlify Deployment Notes
+### Notes
 
-##### [Netlify CMS Authentication Setup](https://www.netlifycms.org/docs/add-to-your-site/#enable-identity-and-git-gateway)
+##### Relative Image Paths
 
-1. We're using Netlify's identity service. Go to **Settings > Identity** and enable the Identity Service.
-2. We don't want to let anyone sign up, so we need to change the registration process to invitation only. Go to **Settings > Identity > Registration** and click "edit settings" to choose the "Invite Only" option. The free netlify only allows 5 invite-only users. 
-3. We can skip the external google auth for now. 
-4. Now we need to enable the logged-in user to make changes to the underlying git repository where all the content is. We're going to use the `git-gateway` backend. Go to **Settings > Identity > Services** and enable the "Git Gateway". It will ask you to authenticate a github user with access to this repository. We should probably create a new user specifically for this purpose called "cms_comrade". 
+In order for content images to work, Forestry should be set up to render all image paths as starting with `"../media"` and to store all image files in `/content/media`. This is because [remark only works with relative image paths currently](https://github.com/gridsome/gridsome/issues/594). For this to work, we'll need to make sure that `"../media"`  is a valid path for all images which means all content markdown files need to live in `/content/{dir}/{file}.md`. 
 
-Now you can go to the **Identity** and invite new users to edit the CMS. They will receive an email and be asked to create a password. 
+### Content Guide
 
-We are not doing anything with roles right now. Ignore all things about roles.
+The content for this site is managed by [Forestry CMS])(https://forestry.io/). For the sake of costs, everyone who has access to the Forestry CMS is an administrator and has the potential to mess up the site settings. 
 
-Note: we could skip the git-gateway and users could log in with github accounts. This is perhaps better security and auditing, but a bigger barrier to getting people added. 
+##### Drafts
 
-##### CMS Changes and Build Settings
+Previews of the CMS in the Forestry CMS will always show all drafts. Drafts are never visible on the production/live site. 
 
-When users make a change in the CMS, it's basically like making a git commit. And for draft/review content, those commits are added to their own non-master branch. (This is the nature of working with static sites.) Netlify will create preview deployments for these branches so you can see what the final site will look like with your content added.
+##### Topics & Articles
 
-Currently, content changes are added to the `master` branch when they are "published". We'll need to update a configuration setting if there's a different flow needed. So in the Netlify go to **Settings > Build & Deploy > Deploy Contexts** to verify that the "Production Branch" is `master` and check that deploy previews are enabled.
-
-Last things, check in **Settings > Build & Deploy > Build Settings** to make sure you have these values:
-
-* Base Directory - not set
-* Build command - "hugo"
-* Publish Directory - "public"
-* Log visibility - private
-* Builds - Active
-
+Topics are the top-level pages and show up in primary navigation. Articles are one-level under a topic and their navigation is only visible one their topic is the active page. 

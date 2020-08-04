@@ -1,0 +1,87 @@
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+@import '~@fullcalendar/timegrid/main.css';
+@import '~@fullcalendar/list/main.css';
+
+/* TOOLBAR */
+
+.fc-toolbar {
+    @apply flex-wrap;
+}
+
+.fc-left, .fc-right {
+    @apply w-full;
+}
+
+@screen sm {
+    .fc-left, .fc-right {
+        @apply w-auto;
+    }
+}
+
+/* HEADER */
+
+.fc-left h2 {
+    @apply text-sm text-red-100 uppercase font-bold tracking-widest;
+}
+@screen md {
+    .fc-left h2 {
+        @apply text-base;
+    }
+}
+
+
+/* BUTTONS */
+
+.fc-button {
+    @apply rounded-none border-none outline-none;
+    @apply text-xs font-black text-white-100 whitespace-no-wrap;
+}
+
+.fc-button-primary {
+    @apply bg-black-100;
+}
+.fc-button-primary:hover {
+    @apply bg-black-80;
+    @apply underline;
+}
+.fc-button-primary:not(:disabled).fc-button-active {
+    @apply bg-red-100;
+}
+.fc-button-primary:disabled {
+    @apply bg-black-60;
+}
+
+/* CALENDER GRID */
+
+.fc-view-container {
+    @apply text-xs;
+}
+
+@screen sm {
+    .fc-view-container {
+        @apply text-sm;
+    }
+}
+
+@screen md {
+    .fc-view-container {
+        @apply text-base;
+    }
+}
+
+.fc-unthemed td.fc-today {
+    @apply bg-red-40;
+}
+
+.fc-event {
+    @apply border-none;
+    @apply bg-black-100;
+}
+.fc-event:hover {
+    @apply underline;
+}
+
+.fc-day-header {
+    @apply uppercase;
+}

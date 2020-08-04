@@ -1,0 +1,43 @@
+---
+label: CalloutFields
+hide_body: false
+fields:
+- name: header
+  type: text
+  config:
+    required: true
+  label: Header
+  description: Main header of this callout item.
+- name: subheader
+  type: text
+  config:
+    required: false
+  label: Subheader
+  description: This is good for pertinent details like event dates/times or author
+    names.
+- name: buttons
+  type: field_group_list
+  fields:
+  - name: link
+    type: text
+    config:
+      required: true
+    description: If it's a link to this site, then you can drop the "<a href="https://dsachattanooga.org"
+      title="https://dsachattanooga.org" target="_blank">https://dsachattanooga.org</a>"
+      and just enter the path as long as it starts with "/" (i.e. "/campaigns/covid-19")
+    label: Link
+  - name: buttonText
+    type: text
+    config:
+      required: true
+    label: Button Text
+    description: The text of the button goes here i.e. "Read more" or "Join now"
+  config:
+    min: 1
+    max: 
+    labelField: buttonText
+  label: Buttons
+  description: The callout should be short and sweet relying on these links to direct
+    the user to more information.
+pages:
+- content/callouts/we-are-socialists.md

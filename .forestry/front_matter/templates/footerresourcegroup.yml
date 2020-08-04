@@ -1,0 +1,49 @@
+---
+label: FooterGroup
+hide_body: true
+display_field: name
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Group Name
+  description: The name of this resource group shows up as header above the links
+    in the footer.
+- name: rank
+  type: number
+  description: Mechanism for ordering the groups from left to right, lowest to highest
+    rank.
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: Rank
+- name: links
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Name
+    description: The text value for this link
+  - name: link
+    type: text
+    config:
+      required: true
+    label: Link
+    description: The URL for this link.
+  config:
+    min: 
+    max: 
+    labelField: name
+  label: Links
+  description: These links appear as a group in the footer.
+pages:
+- content/footer-groups/feedback.md
+- content/footer-groups/labor.md
+- content/footer-groups/national-dsa.md
+- content/footer-groups/partners.md

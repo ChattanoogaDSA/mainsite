@@ -1,0 +1,45 @@
+---
+label: EventFields
+hide_body: false
+display_field: name
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  description: 'The name of the event as it should appear in URLs, calendars, and
+    lists. '
+- name: draft
+  type: boolean
+  label: Draft
+  description: 'Draft events are not visible anywhere. '
+- name: date
+  type: datetime
+  label: Day of the event
+  description: The day of the event. This will be used for ordering events within
+    a list as well.
+  config:
+    required: true
+    date_format: MMM Do, YYYY
+    time_format: ''
+    display_utc: false
+    export_format: ''
+- name: startTime
+  type: datetime
+  label: Start Time
+  description: When the event starts. This field is required.
+  config:
+    required: true
+    date_format: 
+    time_format: h:mm A
+    display_utc: false
+- name: endTime
+  type: datetime
+  label: End time
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: h:mm A
+    display_utc: false

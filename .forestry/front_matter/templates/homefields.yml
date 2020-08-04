@@ -1,0 +1,24 @@
+---
+label: HomeFields
+hide_body: false
+display_field: name
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  default: DSA Chattanooga
+  description: For easier navigation, the home page shows up in the primary navbar
+    with this name.
+- name: callouts
+  type: blocks
+  label: Callouts
+  template_types:
+  - calloutfieldssingle
+  - calloutfieldsgrid
+  config:
+    min: 1
+    max: 
+  description: Highlights to bring to the user's attention and add visual interest
+    to the page.

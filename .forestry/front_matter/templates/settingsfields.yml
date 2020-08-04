@@ -1,0 +1,44 @@
+---
+label: SettingsFields
+hide_body: true
+fields:
+- name: socialIcons
+  type: field_group_list
+  fields:
+  - name: icon
+    type: select
+    default: []
+    config:
+      required: true
+      options:
+      - facebook
+      - instagram
+      - email
+      - twitter
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Icon
+    description: The icon to display for this link. If you need more, just ask.
+  - name: link
+    type: text
+    config:
+      required: true
+    label: link
+    description: Link to send the user to when they click this. It can be a "mailto:"
+      link.
+  - name: helpText
+    type: text
+    config:
+      required: false
+    label: Help Text
+    description: Hover text to help the user understand what this link does
+    default: Click here to follow us on social media
+  config:
+    min: 
+    max: 
+    labelField: icon
+  label: Social Icons
+  description: List of icons to show at the top of the footer

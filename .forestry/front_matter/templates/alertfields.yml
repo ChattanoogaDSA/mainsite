@@ -1,0 +1,50 @@
+---
+label: AlertFields
+hide_body: true
+display_field: name
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  description: This appears as the bold attention grabbing word.
+  default: Attention
+- name: alert
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Alert
+  description: This is full message of the alert
+- name: link
+  type: text
+  config:
+    required: true
+  label: Link
+  description: Where the user should click to find out more about this alert. If it's
+    a link to this site, then you can drop the "https://dsachattanooga.org" and just
+    enter the path as long as it starts with "/" (i.e. "/campaigns/covid-19")
+- name: linkText
+  type: text
+  config:
+    required: true
+  label: Link Text
+  description: The text that goes inside the link telling the user to click here.
+  default: Click here to learn more
+- name: draft
+  type: boolean
+  label: Draft
+  description: The alert will not be visible while this is a draft.
+- name: cookieName
+  type: text
+  config:
+    required: true
+  label: Cookie Name
+  description: 'When users close this alert, a cookie is saved in their browser to
+    remember that action and to avoid re-showing them the same alert over and over.
+    This field specifies a <em>unique</em> name for that cookie that won''t conflict
+    with future cookies. '

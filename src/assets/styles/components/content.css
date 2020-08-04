@@ -1,0 +1,149 @@
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    @apply py-4;
+    @apply leading-tight;
+}
+
+.content h1 {
+    @apply text-5xl font-black tracking-wide;
+}
+.content h2 {
+    @apply text-4xl text-red-100 font-black tracking-wide;
+}
+.content h3 {
+    @apply text-2xl font-black tracking-wider;
+}
+
+.content h4 {
+    @apply text-xl text-red-100 font-bold uppercase tracking-widest;
+}
+
+.content h5 {
+    @apply text-black-60 font-bold uppercase tracking-widest;
+}
+
+.content h6 {
+    @apply text-black-60 font-black;
+}
+
+.content p {
+    @apply pb-4 leading-normal;
+}
+
+@screen md {
+    .content p {
+        @apply text-xl;
+    }
+}
+
+@screen lg {
+    .content p {
+        @apply text-2xl;
+    }
+}
+
+.content ul,
+.content ol {
+    @apply pl-8 pb-4;
+    @apply -ml-2;
+}
+
+@screen md {
+    .content ul,
+    .content ol {
+        @apply text-xl;
+    }
+}
+@screen lg {
+    .content ul,
+    .content ol {
+        @apply text-2xl;
+    }
+}
+
+.content ul {
+    @apply list-square;
+}
+.content ul ul {
+    @apply list-disc;
+}
+
+.content ol {
+    @apply list-decimal;
+}
+
+.content ol ol {
+    @apply list-lower-alpha;
+}
+
+.content em {
+    @apply italic;
+}
+
+.content strong {
+    @apply font-bold;
+}
+
+.content a {
+    @apply underline font-semibold;
+}
+.content a.btn {
+    @apply no-underline;
+}
+.content a.btn:hover {
+    @apply underline;
+}
+
+/* Preventing portrait images from overtaking the page */
+.content img.g-image {
+    max-height: 450px;
+    object-fit: contain;
+}
+@screen md {
+    .content img.g-image {
+        max-height: 900px;
+        object-fit: contain;
+    }
+}
+
+.content-inverted {
+    @apply text-white-100;
+}
+.content-tight p {
+    @apply text-sm;
+}
+.content-tight h1 {
+    @apply text-4xl;
+}
+.content-tight h2 {
+    @apply text-2xl;
+}
+.content-tight h3 {
+    @apply text-xl;
+}
+
+@screen md {
+    .content-tight p {
+        @apply text-base;
+    }
+}
+
+.content blockquote {
+    @apply border-l-2 pl-4;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+.content blockquote p {
+    @apply font-light;
+}
+
+.content blockquote p:last-of-type::after {
+    content: close-quote;
+}
+.content blockquote p:first-of-type::before {
+    content: open-quote;
+}

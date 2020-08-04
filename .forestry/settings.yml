@@ -1,0 +1,78 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: static/cms
+webhook_url: 
+sections:
+- type: heading
+  label: Pages
+- type: document
+  path: content/home/home.md
+  label: Home
+  templates:
+  - homefields
+- type: directory
+  path: content/topics
+  label: Topic
+  create: documents
+  match: "**/*"
+  templates:
+  - topicfields
+- type: directory
+  path: content/articles
+  label: Article
+  create: documents
+  match: "**/*"
+  templates:
+  - articlefields
+- type: directory
+  path: content/events
+  label: Event
+  create: documents
+  match: "**/*"
+  templates:
+  - eventfields
+- type: heading
+  label: Sections
+- type: directory
+  path: content/callouts
+  label: Callouts
+  create: documents
+  match: "**/*"
+  templates:
+  - calloutfields
+- type: directory
+  path: content/footer-groups
+  label: Footer Group
+  create: documents
+  match: "**/*"
+  templates:
+  - footerresourcegroup
+- type: directory
+  path: content/alerts
+  label: Alert
+  create: documents
+  match: "**/*"
+  templates:
+  - alertfields
+- type: heading
+  label: Settings
+- type: document
+  path: content/settings/settings.md
+  label: Settings
+  templates:
+  - settingsfields
+upload_dir: static/media
+public_path: "/media"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - DSA_DRAFTS_ALLOWED=true
+  preview_output_directory: dist
+  install_dependencies_command: npm install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm run develop

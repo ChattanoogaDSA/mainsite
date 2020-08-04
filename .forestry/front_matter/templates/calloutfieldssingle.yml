@@ -1,0 +1,17 @@
+---
+label: CalloutFieldsSingle
+hide_body: false
+fields:
+- name: callout
+  type: select
+  default: []
+  config:
+    required: true
+    options: []
+    source:
+      type: pages
+      section: callouts
+      file: 
+      path: 
+  label: Callout
+  description: Choose a callout item
