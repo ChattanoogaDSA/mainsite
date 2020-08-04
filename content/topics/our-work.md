@@ -29,7 +29,7 @@ The COVID-19 health crisis has laid bare the unequal treatment of tenants both i
 
 We firmly believe that affordable housing is a human right and personal wealth should not be an impediment to quality, safe housing. We are hopeful for the day when public housing in the United States mirrors that seen in European countries such as Finland, Austria, and Belgium, to name a few. We have submitted an amendment proposal to the city council to divest $1,000,000 from the Police Department and to reinvest these funds in the existing Affordable Housing Fund capital project.
 
-### COVID-19 Respone & Mutual Aid
+### COVID-19 Response & Mutual Aid
 
 The coronavirus pandemic has laid bare like never before the inherent cruelty of America’s capitalist economic system. Millions across this country are losing their jobs and unable to pay their rent, unable to buy food, losing their employer-sponsored health insurance, and risking their lives as essential workers in unsafe conditions - all because if we just took care of people’s needs, some billionaire wouldn’t get to profit off of that.
 
