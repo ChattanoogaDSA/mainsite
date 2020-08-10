@@ -44,5 +44,4 @@ fields:
     time_format: h:mm A
     display_utc: false
 pages:
-- content/events/Accessibility WG Meeting August 2020.md
 - content/events/accessibility-wg-monthly-meeting-copy.md
