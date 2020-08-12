@@ -9,7 +9,7 @@ fields:
     required: true
   label: Name
   description: The name of this topic as it should appear in the top-level navigation.
-    The name also appears in the URL.
+    The name also appears in the URL. <strong>It must be unique!</strong>
 - name: draft
   type: boolean
   label: Draft
