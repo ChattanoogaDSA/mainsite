@@ -1,5 +1,5 @@
 ---
-name: Accessibility WG Monthly Meeting
+name: Accessibility WG September Meeting
 draft: false
 date: 2020-09-09T04:00:00Z
 startTime: 2020-08-01T23:00:00Z
