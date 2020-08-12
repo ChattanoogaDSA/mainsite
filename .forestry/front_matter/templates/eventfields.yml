@@ -8,8 +8,8 @@ fields:
   config:
     required: true
   label: Name
-  description: 'The name of the event as it should appear in URLs, calendars, and
-    lists. '
+  description: The name of the event as it should appear in URLs, calendars, and lists.
+    <strong>It must be unique!</strong>
 - name: draft
   type: boolean
   label: Draft
