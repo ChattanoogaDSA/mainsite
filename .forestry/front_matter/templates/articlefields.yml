@@ -23,7 +23,7 @@ fields:
     required: true
   label: Name
   description: The name of this article as it should appear in the sub-navigation
-    list under the topics. The name also appears in the URL.
+    list under the topics. The name also appears in the URL. <strong>It must be unique!</strong>
 - name: draft
   type: boolean
   label: Draft
