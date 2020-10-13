@@ -1,5 +1,5 @@
 ---
-name: Brakelight Clinic October 2020
+name: 'Brakelight Clinic '
 draft: false
 date: 2020-10-25T04:00:00Z
 startTime: 2020-10-01T15:00:00Z
