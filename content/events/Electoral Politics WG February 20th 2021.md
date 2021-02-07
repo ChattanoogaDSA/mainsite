@@ -6,7 +6,7 @@ startTime: 2021-02-01T20:30:00Z
 endTime: 2021-02-01T21:30:00Z
 
 ---
-Join our Electoral Politics working group to discuss the upcoming municipal election and discuss the city council candidates.
+Join our Electoral Politics working group to discuss the upcoming municipal election, and in particular, the city council candidates.
 
 ***
 
