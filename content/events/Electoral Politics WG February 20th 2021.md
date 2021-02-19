@@ -1,9 +1,9 @@
 ---
-name: Electoral Politics WG February 20th 2021
+name: Electoral Politics WG February 21st 2021
 draft: false
-date: 2021-02-20T05:00:00Z
-startTime: 2021-02-01T20:30:00Z
-endTime: 2021-02-01T21:30:00Z
+date: 2021-02-21T05:00:00Z
+startTime: 2021-02-01T21:00:00Z
+endTime: 2021-02-01T22:00:00Z
 
 ---
 Join our Electoral Politics working group to discuss the upcoming municipal election, and in particular, the city council candidates.
