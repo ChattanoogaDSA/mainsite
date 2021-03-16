@@ -15,8 +15,5 @@ socialIcons:
 - icon: email
   link: mailto:chattanoogadsa@gmail.com
   helpText: Click here to email us
-- icon: phone
-  link: tel:+1-423-226-1787
-  helpText: Give us a call (423) 226-1787
 
 ---
