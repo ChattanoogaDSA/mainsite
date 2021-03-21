@@ -6,9 +6,7 @@ startTime: 2021-03-02T01:00:00Z
 endTime: 2021-03-02T02:30:00Z
 
 ---
-## Socialist Night School
-
-##### April 1st, 2021
+# Foundational Principles of Socialism
 
 We are discussing some core topics on what socialism is and what it isn't. The discussion will take place in small groups and then carry over into a large group discussion. We will keep the conversation very approachable and practical. The goal is to lock down the core principles and grow together.The readings are rewarding, but dense. We will provide a high-level summary before diving into the discussion in case you don't have the time to read every word.
 
