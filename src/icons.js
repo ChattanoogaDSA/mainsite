@@ -18,10 +18,12 @@ import {
   faEnvelope,
   faCircleNotch,
   faPhone,
+  faExternalLinkAlt,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
   faEnvelope,
   faCircleNotch,
   faPhone,
+  faExternalLinkAlt,
 )

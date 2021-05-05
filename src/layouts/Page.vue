@@ -26,8 +26,8 @@
                       :active="activeTopic && activeTopic.id === topic.id">
           {{ topic.name }}
         </dsa-nav-item>
-        <dsa-nav-item to="/events" :active="/^\/event/.test($route.path)">
-          Events
+        <dsa-nav-item href="https://www.facebook.com/ChattanoogaDemocraticSocialistsofAmerica/events">
+          Events <span class="text-sm pl-1 align-text-bottom"><fa-icon :icon="['fas', 'external-link-alt']"></fa-icon></span>
         </dsa-nav-item>
       </template>
       <template #secondary v-if="activeTopic">
