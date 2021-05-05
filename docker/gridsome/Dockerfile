@@ -1,4 +1,4 @@
-FROM node:13
+FROM node:14
 
 # Apply user ID mapping so we can write files as if we were the host user
 # Only works when built with DOCKER_XID args
