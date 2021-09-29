@@ -1,5 +1,5 @@
 ---
-rank: 10
+rank: 11
 name: Newsletter
 draft: true
 
